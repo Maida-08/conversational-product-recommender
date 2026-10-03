@@ -20,6 +20,11 @@ class Settings(BaseSettings):
     llm_fallback_model: str = "openai/gpt-oss-120b"
     groq_api_key: str = ""
 
+    # Free-tier protection (Groq free tier: 8K tokens/minute, 30 req/minute)
+    llm_tokens_per_minute_budget: int = 6000   # stay below the 8K limit
+    llm_reasoning_effort: str = "low"          # gpt-oss reasoning models: low/medium/high
+    llm_max_retry_wait_s: int = 90             # never sleep longer than this on a 429
+
     # Optional integrations
     langsmith_tracing: bool = False
     langsmith_api_key: str = ""
@@ -32,6 +37,7 @@ class Settings(BaseSettings):
     # Data paths
     catalog_csv: Path = PROJECT_ROOT / "data" / "amazon_dataset_synthetic_100.csv"
     processed_products: Path = BACKEND_DIR / "app" / "data" / "processed_products.json"
+    outputs_dir: Path = PROJECT_ROOT / "outputs"
 
     @property
     def llm_enabled(self) -> bool:
