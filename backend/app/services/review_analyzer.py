@@ -191,6 +191,8 @@ def summarize_aspect(evidence: list[dict[str, Any]], aspect: str, water_mode: Op
         if rec.get("aspect") != aspect:
             continue
         w = 0.5 if rec.get("hedged") else 1.0
+        if rec.get("source") == "llm":                  # LLM-only evidence counts half until a rule agrees
+            w *= LLM_WEIGHT
         scope = rec.get("scope")
         if aspect == "water":
             if rec["polarity"] == "negative" and water_mode == "resistant" and scope == "heavy":
@@ -225,10 +227,24 @@ def ensure_review_evidence(products: list[ProcessedProduct], force: bool = False
         if force or not p.review_evidence:
             p.review_evidence = analyze_product_rules(p)
             p.review_warnings = product_warnings(p)
+            if force:     # a forced rebuild starts from rules only, so the LLM pass may run again
+                p.extraction.notes = [n for n in p.extraction.notes if n != _LLM_DONE]
     return products
 
 
 # ============================================================ optional LLM refinement
+# POLICY (learned from checking real Groq output against the rules):
+#   * Rules WIN on any disagreement: they have explicit negation handling and our exact directions.
+#   * The LLM only FILLS GAPS (snippets the rules found nothing in), and only for aspects whose
+#     direction is unambiguous. weight ("light" vs "heavy") and fragrance (we mean "no scent") are
+#     direction-sensitive: an LLM that reads "heavy but calming" as a plus, or "lovely scent" as
+#     support, flips the meaning for a shopper who asked for lightweight or fragrance-free.
+#   * LLM-only evidence counts HALF until a rule agrees (LLM_WEIGHT).
+LLM_ASPECTS = ("water", "grip", "durability", "battery")
+LLM_WEIGHT = 0.5
+_LLM_DONE = "review evidence refined by LLM"
+
+
 class _LLMAspect(BaseModel):
     model_config = ConfigDict(extra="ignore")
     aspect: str
@@ -247,14 +263,17 @@ class _Client(Protocol):
     def complete_json(self, system: str, user: str, max_tokens: int = 3500) -> tuple[dict, dict]: ...
 
 
-SYSTEM_PROMPT = ("You classify short product reviews. Use ONLY what each review actually says. "
-                 "Return ONLY one JSON object.")
-USER_PROMPT_TEMPLATE = """For each numbered review, list the aspects it clearly comments on, from:
-water (waterproofing / staying dry), grip (slipping / traction), durability (breaking, wearing out),
-battery (battery life), weight (heavy / light), fragrance (scent / smell).
-For each aspect give: polarity "supports" (the review says the product is good at it) or "negative";
-hedged true/false (hedged wording such as "a bit", "kind of"); and for water only, scope "light"
-(drizzle / light rain), "heavy" (downpour / storm) or null. Skip aspects a review does not mention.
+SYSTEM_PROMPT = ("You classify short product reviews. Use ONLY what each review actually says about the "
+                 "product itself. Return ONLY one JSON object.")
+USER_PROMPT_TEMPLATE = """For each numbered review, list which of these aspects it clearly comments on:
+- water: "supports" = it kept water out / stayed dry; "negative" = it let water in / got soaked.
+- grip: "supports" = it grips / does not slip; "negative" = it slips.
+- durability: "supports" = it is sturdy / lasts; "negative" = it broke, wore out or peeled.
+- battery: "supports" = battery life is good or as advertised; "negative" = battery life fell short.
+Ignore remarks about something else: a cleanser that does not remove waterproof mascara is NOT about water
+resistance, and a pan that eggs slide off is NOT about grip. Skip aspects a review does not mention.
+Also give hedged true/false (hedged wording such as "a bit", "kind of") and, for water only, scope "light"
+(drizzle / light rain), "heavy" (downpour / storm) or null.
 Output: {{"reviews": [{{"i": <number>, "aspects": [{{"aspect": "...", "polarity": "...", "hedged": false, "scope": null}}]}}]}}
 
 Reviews:
@@ -264,11 +283,12 @@ Reviews:
 def refine_with_llm(products: list[ProcessedProduct], client: _Client, batch_size: int = 5,
                     log=print) -> int:
     """
-    Let the LLM refine rule-based evidence. Guarded: aspect must be in the vocabulary and the snippet
-    must contain an aspect keyword. Returns the number of products refined. Never raises on LLM failure.
+    Gap-fill rule-based evidence with the LLM (see POLICY above). Guarded: the aspect must be in
+    LLM_ASPECTS and the snippet must contain an aspect keyword. Returns the number of products processed.
+    Never raises on LLM failure.
     """
     refined = 0
-    todo = [p for p in products if p.review_snippets and not any(r.get("source") == "llm" for r in p.review_evidence)]
+    todo = [p for p in products if p.review_snippets and _LLM_DONE not in p.extraction.notes]
     for start in range(0, len(todo), batch_size):
         batch = todo[start:start + batch_size]
         index: list[tuple[ProcessedProduct, str]] = [(p, s) for p in batch for s in p.review_snippets]
@@ -286,24 +306,30 @@ def refine_with_llm(products: list[ProcessedProduct], client: _Client, batch_siz
             except ValidationError:
                 continue
 
+        added = ignored = 0
         for p in batch:
-            records = {(r["quote"], r["aspect"]): r for r in p.review_evidence}
+            existing = {(r["quote"], r["aspect"]): r for r in p.review_evidence}
             for i, (owner, snippet) in enumerate(index, 1):
                 if owner is not p or i not in by_index:
                     continue
                 for a in by_index[i].aspects:
-                    if a.aspect not in ASPECTS or a.polarity not in ("supports", "negative"):
+                    if a.aspect not in LLM_ASPECTS or a.polarity not in ("supports", "negative"):
                         continue
                     if not _RULES[a.aspect][0].search(snippet):      # keyword gate: no invented evidence
                         continue
+                    if (snippet, a.aspect) in existing:              # rules already decided: rules win
+                        ignored += existing[(snippet, a.aspect)]["polarity"] != a.polarity
+                        continue
                     scope = a.scope if a.aspect == "water" and a.scope in ("light", "heavy") else None
-                    records[(snippet, a.aspect)] = {
+                    p.review_evidence.append({
                         "aspect": a.aspect, "polarity": a.polarity, "hedged": bool(a.hedged),
-                        "scope": scope, "quote": snippet, "source": "llm"}
-            p.review_evidence = list(records.values())
+                        "scope": scope, "quote": snippet, "source": "llm"})
+                    added += 1
             p.review_warnings = product_warnings(p)
+            p.extraction.notes.append(_LLM_DONE)
             refined += 1
-        log(f"  reviews [{', '.join(p.product_id for p in batch)}] refined via {meta.get('model')}")
+        log(f"  reviews [{', '.join(p.product_id for p in batch)}] via {meta.get('model')}: "
+            f"{added} gap(s) filled, {ignored} disagreement(s) ignored (rules win)")
     return refined
 
 

@@ -246,3 +246,22 @@ class TestOnCatalog:
     def test_p024_water_unknown_in_description(self, processed):
         """The 'survived rain' signal is review-only."""
         assert processed["P024"].attributes.water_resistance.status is None
+
+
+def test_llm_intended_use_must_be_grounded_in_the_listing():
+    raw = make_raw(desc="Waterproof leather hiking shoe with a supportive midsole for day hikes.")
+    p = ax.rules_extract(raw)
+    llm = ax._LLMProduct(product_id="T1", intended_use=["gift", "day hiking", "mountaineering"])
+    ax._apply_llm(p, llm)
+    assert "gift" not in p.attributes.intended_use and "mountaineering" not in p.attributes.intended_use
+    assert "day hiking" in p.attributes.intended_use
+    assert sum(n.startswith("dropped unsupported intended_use") for n in p.extraction.notes) == 2
+
+
+def test_revalidate_drops_unsupported_tags_and_keeps_rule_derived_ones():
+    raw = make_raw(desc="Waterproof leather hiking shoe for day hikes.")
+    p = ax.rules_extract(raw)
+    p.attributes.intended_use.append("gift")
+    assert ax.revalidate_intended_use([p]) == 1
+    assert "gift" not in p.attributes.intended_use and "hiking" in p.attributes.intended_use
+    assert ax.revalidate_intended_use([p]) == 0                      # idempotent

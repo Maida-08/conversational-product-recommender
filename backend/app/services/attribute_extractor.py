@@ -268,6 +268,15 @@ def _in_text(term: str, text: str) -> bool:
     return bool(t) and (t in body or t.rstrip("s") in body)
 
 
+def _use_supported(tag: str, text: str) -> bool:
+    """An intended-use tag must be grounded in the listing: >= half of its words (4-letter prefix) appear."""
+    toks = [t for t in re.findall(r"[a-z0-9]+", tag.lower()) if len(t) >= 3]
+    if not toks:
+        return False
+    low = text.lower()
+    return sum(1 for t in toks if re.search(rf"\b{re.escape(t[:4])}", low)) / len(toks) >= 0.5
+
+
 def _snake(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_")
 
@@ -308,8 +317,12 @@ def _apply_llm(p: ProcessedProduct, llm: _LLMProduct) -> None:
 
     for u in llm.intended_use[:6]:
         tag = _norm(u)
-        if tag and len(tag.split()) <= 3 and tag not in a.intended_use:
+        if not tag or len(tag.split()) > 3 or tag in a.intended_use:
+            continue
+        if _use_supported(tag, p.title + " " + desc):
             a.intended_use.append(tag)
+        else:
+            notes.append(f"dropped unsupported intended_use '{tag}'")
 
     for tag in map(_snake, llm.features):
         if not tag or tag in a.features:
@@ -424,6 +437,22 @@ def build_processed_products(
     return results
 
 
+def revalidate_intended_use(products: list[ProcessedProduct]) -> int:
+    """Drop intended-use tags the listing does not support (no API calls). Returns how many were dropped."""
+    dropped = 0
+    for p in products:
+        grounded = set(extract_lexicon(p.description, _USES))
+        keep = []
+        for tag in p.attributes.intended_use:
+            if tag in grounded or _use_supported(tag, p.title + " " + p.description):
+                keep.append(tag)
+            else:
+                dropped += 1
+                p.extraction.notes.append(f"dropped unsupported intended_use '{tag}'")
+        p.attributes.intended_use = keep
+    return dropped
+
+
 # ===================================================================== CLI
 SAMPLE_IDS = ["P001", "P002", "P003", "P005", "P011", "P014", "P015", "P024"]
 
@@ -445,7 +474,16 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Build processed_products.json")
     ap.add_argument("--rules-only", action="store_true", help="skip the LLM entirely")
     ap.add_argument("--force", action="store_true", help="ignore cached results")
+    ap.add_argument("--fix-uses", action="store_true",
+                    help="re-validate intended_use tags in the existing JSON (no API calls) and exit")
     args = ap.parse_args()
+
+    if args.fix_uses:
+        existing_products = load_processed()
+        n = revalidate_intended_use(existing_products)
+        save_processed(existing_products)
+        print(f"dropped {n} unsupported intended_use tag(s) across {len(existing_products)} products (no API calls)")
+        return
 
     settings = get_settings()
     raw = load_catalog()

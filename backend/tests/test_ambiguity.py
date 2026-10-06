@@ -133,3 +133,14 @@ def test_real_product_is_answered(products, retriever):
 def test_empty_retrieval_is_no_match(products, retriever):
     q = rules_parse("zzzz qqqq")
     assert match_check(q, retriever.retrieve(q)).decision == "no_match"
+
+
+def test_a_wrongly_tagged_gift_never_becomes_a_clarifying_option(products):
+    # real Groq output tagged a hiking shoe as a 'gift'; after re-validation it must not be offered
+    from app.services.attribute_extractor import revalidate_intended_use
+    catalog = [p.model_copy(deep=True) for p in products]
+    shoe = next(p for p in catalog if p.product_id == "P004")
+    shoe.attributes.intended_use.append("gift")
+    assert "hiking shoe" in gate(rules_parse("Something nice for my mom"), catalog).options
+    revalidate_intended_use(catalog)
+    assert "hiking shoe" not in gate(rules_parse("Something nice for my mom"), catalog).options

@@ -202,3 +202,54 @@ def test_more_than_inside_a_cap_phrase_is_not_a_minimum():
 def test_cap_and_floor_can_coexist():
     b = qu.parse_budget("something over $20 but under $50")
     assert (b.min, b.max) == (20, 50)    
+def test_llm_tone_words_are_not_requirements():
+    rq = qu.rules_parse("Looking for cheap wireless earbuds, just need something basic")
+    llm = qu._LLMQuery(
+        hard_requirements=["wireless", "cheap", "basic"],
+        soft_preferences=[],
+    )
+
+    q = qu._merge(rq, llm, qu.KNOWN_CATEGORIES, [])
+
+    assert "wireless" in q.hard_requirements
+    assert "cheap" not in q.hard_requirements
+    assert "basic" not in q.hard_requirements
+    assert "cheap" in q.tone_signals
+    assert "basic" in q.tone_signals
+
+
+def test_llm_budget_restatement_is_not_requirement():
+    rq = qu.rules_parse("I need a lightweight waterproof running shoe, ideally under $80")
+    llm = qu._LLMQuery(
+        hard_requirements=["lightweight", "waterproof"],
+        soft_preferences=["ideally under $80"],
+    )
+
+    q = qu._merge(rq, llm, qu.KNOWN_CATEGORIES, [])
+
+    assert "lightweight" in q.hard_requirements
+    assert "waterproof" in q.hard_requirements
+    assert "ideally_under_80" not in q.soft_preferences
+    assert q.budget.max == 80.0
+
+
+def test_llm_cannot_turn_price_tone_or_the_product_type_into_requirements():
+    # real Groq output put "cheap" and "ideally under $80" into the requirements list
+    payload = {"product_type": "wireless earbuds", "hard_requirements": ["cheap", "wireless earbuds", "wireless"],
+               "soft_preferences": ["basic"]}
+    q = qu.understand_query("Looking for cheap wireless earbuds, just need something basic", client=FakeClient(payload))
+    assert q.hard_requirements == ["wireless"] and q.soft_preferences == []
+    assert sum("not a requirement" in n for n in q.notes) == 2           # 'cheap' and 'basic'
+
+
+def test_a_budget_phrase_or_the_product_type_is_not_a_requirement():
+    payload = {"hard_requirements": ["lightweight", "running shoe"], "soft_preferences": ["ideally under $80"]}
+    q = qu.understand_query("I need a lightweight waterproof running shoe, ideally under $80", client=FakeClient(payload))
+    assert q.hard_requirements == ["waterproof", "lightweight"] and q.soft_preferences == []
+    assert q.budget.max == 80 and q.budget.firmness == "soft"             # the budget lives in its own field
+
+
+def test_genuine_attributes_with_numbers_are_still_accepted():
+    payload = {"hard_requirements": ["40L capacity"]}
+    q = qu.understand_query("a hiking backpack with 40L capacity", client=FakeClient(payload))
+    assert any("40l" in r for r in q.hard_requirements)

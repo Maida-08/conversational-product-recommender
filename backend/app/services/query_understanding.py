@@ -383,8 +383,8 @@ Return JSON with these fields:
 - product_type: what they want to buy, as a short noun phrase in their own words, or null
 - category: one of {categories}, or null
 - budget: {{"max": number or null, "min": number or null}} (only if a price is stated)
-- hard_requirements: short phrases for things they insist on
-- soft_preferences: short phrases for things marked optional ("ideally", "prefer", "if possible")
+- hard_requirements: product attributes they insist on (NOT the price or budget, NOT "cheap" or "premium", and NOT the product type itself)
+- soft_preferences: product attributes marked optional ("ideally", "prefer", "if possible"); a price or budget is NOT an attribute
 - intended_use: short lowercase tags for what it is for
 - brand: brand name if one is mentioned, else null
 - is_gift: true/false
@@ -411,6 +411,28 @@ def _canonical(term: str) -> Optional[str]:
         if pat.search(term):
             return tag
     return None
+
+
+# Words about HOW MUCH the shopper will spend or the style of the ask. They have their own fields
+# (budget, tone_signals) and are never product requirements.
+_TONE_WORDS = {"cheap", "cheapest", "inexpensive", "affordable", "budget", "basic", "simple", "premium",
+               "luxury", "best", "top", "quality", "decent", "good", "nice", "great", "price", "priced"}
+_FILLER = {"for", "and", "the", "that", "with", "something", "looking", "need", "want", "ideally",
+           "preferably", "under", "over", "below", "above", "than", "less", "more", "about", "around",
+           "just", "really", "very", "quite", "some", "also", "maybe"}
+_PRICE_PHRASE = re.compile(r"\$|\b(budget|dollars?|bucks?|price[ds]?)\b|\b(under|below|less than|over|above)\s+\d", re.I)
+
+
+def _is_non_requirement(term: str, q: StructuredQuery) -> bool:
+    """Price phrases, tone words and restatements of the product type are not requirements."""
+    t = term.lower()
+    if _PRICE_PHRASE.search(t):
+        return True
+    words = [w for w in re.findall(r"[a-z]+", t) if len(w) >= 3 and w not in _FILLER]
+    if not words:
+        return True
+    known = _TONE_WORDS | set(re.findall(r"[a-z]+", f"{q.product_type or ''} {q.category or ''}".lower()))
+    return all(w in known or w.rstrip("s") in known for w in words)
 
 
 def _merge(rq: StructuredQuery, llm: _LLMQuery, categories: Sequence[str],
@@ -451,6 +473,9 @@ def _merge(rq: StructuredQuery, llm: _LLMQuery, categories: Sequence[str],
                 continue
             if not _tokens_supported(t, msg):
                 notes.append(f"dropped LLM requirement '{t}' (not supported by the message)")
+                continue
+            if _is_non_requirement(t, q):
+                notes.append(f"dropped LLM requirement '{t}' (price, tone or product type: not a requirement)")
                 continue
             tag = _canonical(t) or re.sub(r"\s+", "_", t)
             if tag in known:

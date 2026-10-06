@@ -321,3 +321,81 @@ def test_unrelated_complaints_do_not_affect_ranking(run):
 def test_fragrance_free_supported_only_by_a_review(run):
     p049 = req(run("a fragrance-free cleanser")["P049"], "fragrance_free")
     assert p049.state == "partial" and p049.source == "reviews"
+
+
+
+# ------------------------------------------- LLM policy: rules win, gap-fill only, half weight
+class CountingClient(FakeClient):
+    def __init__(self, payload):
+        super().__init__(payload)
+        self.calls = 0
+
+    def complete_json(self, system, user, max_tokens=3500):
+        self.calls += 1
+        return super().complete_json(system, user, max_tokens)
+
+
+def test_llm_cannot_overrule_a_rule_based_classification():
+    p = _product(["Handled steady rain on a day hike without leaking"])
+    ensure_review_evidence([p])
+    assert [(r["polarity"], r["source"]) for r in p.review_evidence] == [("supports", "rules")]
+    payload = {"reviews": [{"i": 1, "aspects": [{"aspect": "water", "polarity": "negative"}]}]}
+    refine_with_llm([p], FakeClient(payload), log=lambda *_: None)
+    assert [(r["polarity"], r["source"]) for r in p.review_evidence] == [("supports", "rules")]
+
+
+def test_llm_cannot_touch_direction_sensitive_aspects():
+    # real Groq output flipped "No scent at all" to negative and read "Heavy but calming" as a plus
+    p = _product(["No scent at all and it works for my sensitive skin"])
+    ensure_review_evidence([p])
+    payload = {"reviews": [{"i": 1, "aspects": [{"aspect": "fragrance", "polarity": "negative"},
+                                                {"aspect": "weight", "polarity": "supports"}]}]}
+    refine_with_llm([p], FakeClient(payload), log=lambda *_: None)
+    assert [(r["aspect"], r["polarity"], r["source"]) for r in p.review_evidence] == [("fragrance", "supports", "rules")]
+
+
+def test_llm_only_evidence_counts_half():
+    ev = [{"aspect": "water", "polarity": "negative", "hedged": False, "scope": None, "quote": "q", "source": "llm"}]
+    assert summarize_aspect(ev, "water").negative == 0.5
+    ev[0]["source"] = "rules"
+    assert summarize_aspect(ev, "water").negative == 1.0
+
+
+def test_llm_only_evidence_alone_cannot_create_a_conflict():
+    from app.services.ranker import _apply_reviews
+    ev = [{"aspect": "water", "polarity": "negative", "hedged": False, "scope": None, "quote": f"q{i}", "source": "llm"}
+          for i in range(3)]
+    s = summarize_aspect(ev, "water", n_reviews=4)          # three LLM-only negatives = weight 1.5 < 2
+    assert _apply_reviews(_req("met"), s).state == "met"
+
+
+def test_a_product_is_not_sent_to_the_llm_twice():
+    p = _product(["It did not keep my feet dry at all"])
+    payload = {"reviews": [{"i": 1, "aspects": [{"aspect": "water", "polarity": "negative"}]}]}
+    client = CountingClient(payload)
+    refine_with_llm([p], client, log=lambda *_: None)
+    refine_with_llm([p], client, log=lambda *_: None)
+    assert client.calls == 1
+
+
+def test_llm_cannot_add_evidence_for_direction_sensitive_aspects_even_where_rules_are_silent():
+    # real Groq output: "Lovely scent that fills the room" -> fragrance 'supports' (wrong for fragrance-free),
+    # "Base is a little light" -> weight 'negative' (wrong direction for 'lightweight')
+    p = _product(["Lovely scent that fills the room", "Base is a little light"])
+    assert classify_snippet(p.review_snippets[0]) == [] and classify_snippet(p.review_snippets[1]) == []
+    payload = {"reviews": [{"i": 1, "aspects": [{"aspect": "fragrance", "polarity": "supports"}]},
+                           {"i": 2, "aspects": [{"aspect": "weight", "polarity": "negative"}]}]}
+    refine_with_llm([p], FakeClient(payload), log=lambda *_: None)
+    assert p.review_evidence == []
+
+
+def test_force_rebuild_resets_to_rules_only_and_allows_the_llm_pass_again():
+    p = _product(["It did not keep my feet dry at all"])
+    payload = {"reviews": [{"i": 1, "aspects": [{"aspect": "water", "polarity": "negative"}]}]}
+    client = CountingClient(payload)
+    refine_with_llm([p], client, log=lambda *_: None)
+    assert client.calls == 1 and [r["source"] for r in p.review_evidence] == ["llm"]
+    ensure_review_evidence([p], force=True)
+    assert p.review_evidence == []                       # LLM-only evidence is dropped by a forced rebuild
+    refine_with_llm([p], client, log=lambda *_: None)
+    assert client.calls == 2    
