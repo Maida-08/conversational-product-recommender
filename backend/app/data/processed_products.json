@@ -1,0 +1,6233 @@
+[
+  {
+    "product_id": "P001",
+    "category": "footwear",
+    "brand": "Aquaridge",
+    "title": "Aquaridge StormShield Waterproof Trail Running Shoe",
+    "description": "Fully waterproof trail runner with a sealed-seam membrane and gusseted tongue. Aggressive 5mm lugs for wet trails. Weighs 10.2 oz (289 g) per shoe in men's size 9. Synthetic mesh upper with TPU overlays.",
+    "price_usd": 89.5,
+    "average_rating": 4.5,
+    "num_reviews": 812,
+    "review_snippets": [
+      "Feet stayed bone dry through a two-hour downpour",
+      "Grippy on wet rock, but needed a week to break in",
+      "Pricey for a running shoe, though it is the only one that kept me dry"
+    ],
+    "attributes": {
+      "product_type": "trail running shoe",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Fully waterproof trail runner with a sealed-seam membrane and gusseted tongue.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 289.2,
+        "raw": "10.2 oz",
+        "basis": "per_shoe"
+      },
+      "materials": [
+        "mesh",
+        "TPU",
+        "synthetic",
+        "synthetic mesh"
+      ],
+      "intended_use": [
+        "running",
+        "trail",
+        "trail running"
+      ],
+      "features": [
+        "sealed_seam_membrane",
+        "gusseted_tongue",
+        "aggressive_5mm_lugs"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_oz": 10.2,
+        "weight_g": 289.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": "heavy",
+        "quote": "Feet stayed bone dry through a two-hour downpour",
+        "source": "rules"
+      },
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Grippy on wet rock, but needed a week to break in",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Pricey for a running shoe, though it is the only one that kept me dry",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "6490dab16fce",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P002",
+    "category": "footwear",
+    "brand": "TrailFox",
+    "title": "TrailFox Featherlite Running Shoe",
+    "description": "Ultralight road-to-trail runner at just 7.8 oz (221 g). Breathable engineered mesh upper, 8mm drop and a responsive foam midsole. Built for tempo runs and daily miles.",
+    "price_usd": 64.99,
+    "average_rating": 4.4,
+    "num_reviews": 1543,
+    "review_snippets": [
+      "Barely feel them on my feet, super light",
+      "Mesh soaked through in the first rain, wet socks the whole run",
+      "Great daily trainer for dry weather"
+    ],
+    "attributes": {
+      "product_type": "road-to-trail running shoe",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 221.1,
+        "raw": "at just 7.8 oz",
+        "basis": "item"
+      },
+      "materials": [
+        "mesh",
+        "foam",
+        "engineered mesh"
+      ],
+      "intended_use": [
+        "running",
+        "trail",
+        "everyday",
+        "tempo runs",
+        "daily miles"
+      ],
+      "features": [
+        "ultralight",
+        "8mm_drop",
+        "responsive_foam_midsole"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_oz": 7.8,
+        "weight_g": 221.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Barely feel them on my feet, super light",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Mesh soaked through in the first rain, wet socks the whole run",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "d9537175694e",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P003",
+    "category": "footwear",
+    "brand": "UrbanStep",
+    "title": "UrbanStep Canvas Casual Sneaker",
+    "description": "Classic low-top sneaker in cotton canvas with a vulcanized rubber sole and cushioned insole. Available in six colors. A clean everyday look for casual wear.",
+    "price_usd": 54.0,
+    "average_rating": 4.2,
+    "num_reviews": 966,
+    "review_snippets": [
+      "Comfortable and looks great with jeans",
+      "The fabric got soaked in light rain and took a day to dry",
+      "Canvas soaked through in a drizzle, would not wear these in wet weather"
+    ],
+    "attributes": {
+      "product_type": "casual sneaker",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "canvas",
+        "cotton",
+        "rubber",
+        "cotton canvas",
+        "vulcanized rubber"
+      ],
+      "intended_use": [
+        "casual",
+        "everyday",
+        "casual wear"
+      ],
+      "features": [
+        "low_top",
+        "cushioned_insole"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "light",
+        "quote": "The fabric got soaked in light rain and took a day to dry",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "light",
+        "quote": "Canvas soaked through in a drizzle, would not wear these in wet weather",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "2 of 3 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "b8b477697ef6",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P004",
+    "category": "footwear",
+    "brand": "Northpath",
+    "title": "Northpath Leather Hiking Shoe",
+    "description": "Waterproof full-grain leather hiking shoe with a bootie-style membrane and a lugged rubber outsole. Supportive midsole for day hikes. Weighs 1 lb 14 oz (850 g) per pair.",
+    "price_usd": 119.0,
+    "average_rating": 4.6,
+    "num_reviews": 704,
+    "review_snippets": [
+      "Kept my feet dry crossing shallow streams",
+      "Sturdy but a little heavy for long days",
+      "Handled steady rain on a day hike without leaking"
+    ],
+    "attributes": {
+      "product_type": "hiking shoe",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Waterproof full-grain leather hiking shoe with a bootie-style membrane and a lugged rubber outsole.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 850.5,
+        "raw": "1 lb 14 oz",
+        "basis": "per_pair"
+      },
+      "materials": [
+        "leather",
+        "rubber",
+        "full-grain leather",
+        "bootie-style membrane",
+        "rubber outsole"
+      ],
+      "intended_use": [
+        "hiking",
+        "day hikes"
+      ],
+      "features": [
+        "waterproof",
+        "lugged_rubber_outsole",
+        "supportive_midsole"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_lb": 1.0,
+        "weight_oz": 14.0,
+        "weight_g": 850.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Kept my feet dry crossing shallow streams",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Sturdy but a little heavy for long days",
+        "source": "rules"
+      },
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": true,
+        "scope": null,
+        "quote": "Sturdy but a little heavy for long days",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Handled steady rain on a day hike without leaking",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "ea5438b2eff3",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P005",
+    "category": "footwear",
+    "brand": "Cloudstride",
+    "title": "Cloudstride Max Cushion Road Running Shoe",
+    "description": "Maximum-cushion road running shoe with a knit upper. Not waterproof; designed for breathability in warm weather. 9.6 oz (272 g) per shoe. Rocker geometry for long runs.",
+    "price_usd": 129.0,
+    "average_rating": 4.7,
+    "num_reviews": 2210,
+    "review_snippets": [
+      "Plush ride for marathon training",
+      "Knit upper breathes well and dries fast",
+      "Excellent cushioning but pricey"
+    ],
+    "attributes": {
+      "product_type": "road running shoe",
+      "water_resistance": {
+        "status": false,
+        "level": null,
+        "rating": null,
+        "evidence": "Not waterproof; designed for breathability in warm weather.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 272.2,
+        "raw": "9.6 oz (272 g) per shoe",
+        "basis": "per_shoe"
+      },
+      "materials": [
+        "knit",
+        "knit upper"
+      ],
+      "intended_use": [
+        "running",
+        "long runs"
+      ],
+      "features": [
+        "maximum_cushion",
+        "rocker_geometry"
+      ],
+      "lacks": [
+        "waterproof"
+      ],
+      "specs": {
+        "weight_oz": 9.6,
+        "weight_g": 272.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1c3f3a5cbf02",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P006",
+    "category": "footwear",
+    "brand": "Tempo",
+    "title": "Tempo AquaRun Waterproof Lightweight Runner",
+    "description": "Lightweight, waterproof running shoe with a water-repellent coated upper and bootie construction. Reflective details for low-light runs. Everyday training in any conditions.",
+    "price_usd": 74.99,
+    "average_rating": 4.1,
+    "num_reviews": 388,
+    "review_snippets": [
+      "Leaked through the seams on the first stormy run",
+      "The waterproof claim is wrong, my socks were soaked after one puddle",
+      "Fine in a light drizzle and a comfortable fit"
+    ],
+    "attributes": {
+      "product_type": "waterproof running shoe",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Lightweight, waterproof running shoe with a water-repellent coated upper and bootie construction.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "water-repellent coated upper"
+      ],
+      "intended_use": [
+        "running",
+        "everyday",
+        "trail running"
+      ],
+      "features": [
+        "reflective_details"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "heavy",
+        "quote": "Leaked through the seams on the first stormy run",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "The waterproof claim is wrong, my socks were soaked after one puddle",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": "light",
+        "quote": "Fine in a light drizzle and a comfortable fit",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "2 of 3 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "d667ea7975a3",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'gift'"
+      ]
+    }
+  },
+  {
+    "product_id": "P007",
+    "category": "footwear",
+    "brand": "Granite Peak",
+    "title": "Granite Peak Waterproof Hiking Boot",
+    "description": "Mid-cut hiking boot with a waterproof membrane and full-grain leather upper. Lugged rubber outsole, padded collar and solid ankle support. Weighs 2 lb 6 oz (1.08 kg) per pair.",
+    "price_usd": 139.0,
+    "average_rating": 4.6,
+    "num_reviews": 1287,
+    "review_snippets": [
+      "Dry feet through three days of rain in the Cascades",
+      "Great ankle support and very durable",
+      "Started to leak at the toe after about six months",
+      "Excellent traction on muddy trails"
+    ],
+    "attributes": {
+      "product_type": "waterproof hiking boot",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Mid-cut hiking boot with a waterproof membrane and full-grain leather upper.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 1077.3,
+        "raw": "2 lb 6 oz",
+        "basis": "per_pair"
+      },
+      "materials": [
+        "leather",
+        "rubber",
+        "full-grain leather upper"
+      ],
+      "intended_use": [
+        "hiking"
+      ],
+      "features": [
+        "waterproof_membrane",
+        "lugged_rubber_outsole",
+        "padded_collar",
+        "solid_ankle_support"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Dry feet through three days of rain in the Cascades",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Great ankle support and very durable",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Started to leak at the toe after about six months",
+        "source": "rules"
+      },
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Excellent traction on muddy trails",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 4 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "cc539ef4af0d",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'trail running'",
+        "dropped unsupported intended_use 'gift'"
+      ]
+    }
+  },
+  {
+    "product_id": "P008",
+    "category": "footwear",
+    "brand": "SoftStep",
+    "title": "SoftStep Slip-On Comfort Walking Shoe",
+    "description": "Slip-on walking shoe with a stretch knit upper, memory-foam insole and lightweight EVA sole. Machine washable. Made for all-day comfort.",
+    "price_usd": 49.0,
+    "average_rating": 4.3,
+    "num_reviews": 2035,
+    "review_snippets": [
+      "Easy on and off, very comfortable for errands",
+      "Light as a slipper",
+      "Not great in the rain, the knit gets damp fast"
+    ],
+    "attributes": {
+      "product_type": "slip-on walking shoe",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "knit",
+        "memory foam",
+        "EVA",
+        "stretch knit upper",
+        "memory-foam insole",
+        "lightweight EVA sole"
+      ],
+      "intended_use": [
+        "walking"
+      ],
+      "features": [
+        "machine_washable"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Light as a slipper",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "light",
+        "quote": "Not great in the rain, the knit gets damp fast",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1545524dde00",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'gift'"
+      ]
+    }
+  },
+  {
+    "product_id": "P009",
+    "category": "footwear",
+    "brand": "Riverline",
+    "title": "Riverline Quick-Dry Water Sandal",
+    "description": "Sport sandal with adjustable straps, quick-drying webbing and a grippy rubber sole. Designed for water and trail use. Weighs 11 oz (312 g) per pair.",
+    "price_usd": 45.0,
+    "average_rating": 4.4,
+    "num_reviews": 820,
+    "review_snippets": [
+      "Wore them kayaking and hiking, they drain instantly",
+      "Straps rubbed a bit at first",
+      "Good grip on wet rocks"
+    ],
+    "attributes": {
+      "product_type": "water sandal",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 311.8,
+        "raw": "11 oz",
+        "basis": "per_pair"
+      },
+      "materials": [
+        "rubber",
+        "quick-drying webbing",
+        "grippy rubber sole"
+      ],
+      "intended_use": [
+        "trail",
+        "water sports",
+        "trail running"
+      ],
+      "features": [
+        "adjustable_straps"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Good grip on wet rocks",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "720c25696790",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'gift'"
+      ]
+    }
+  },
+  {
+    "product_id": "P010",
+    "category": "footwear",
+    "brand": "Apex",
+    "title": "Apex Carbon Plate Racing Shoe",
+    "description": "Race-day shoe with a carbon-fiber plate and ultra-light foam. 6.9 oz (196 g) per shoe. Built for speed on the road; not intended for daily training or trail use.",
+    "price_usd": 189.0,
+    "average_rating": 4.5,
+    "num_reviews": 640,
+    "review_snippets": [
+      "Fast and springy, set a half-marathon PR",
+      "Wears out quickly, best saved for race day",
+      "Firm at slow paces"
+    ],
+    "attributes": {
+      "product_type": "racing shoe",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 195.6,
+        "raw": "6.9 oz (196 g) per shoe",
+        "basis": "per_shoe"
+      },
+      "materials": [
+        "carbon fiber",
+        "foam",
+        "carbon-fiber plate",
+        "ultra-light foam"
+      ],
+      "intended_use": [
+        "trail",
+        "everyday",
+        "racing",
+        "trail running"
+      ],
+      "features": [],
+      "lacks": [
+        "daily_training",
+        "trail_use"
+      ],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Wears out quickly, best saved for race day",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "9bee0032a9b1",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'gift'"
+      ]
+    }
+  },
+  {
+    "product_id": "P011",
+    "category": "footwear",
+    "brand": "PaceLine",
+    "title": "PaceLine Basic Road Running Shoe",
+    "description": "No-frills road running shoe with a mesh upper, cushioned EVA midsole and durable rubber outsole. A dependable entry-level trainer for casual joggers.",
+    "price_usd": 39.99,
+    "average_rating": 4.0,
+    "num_reviews": 3200,
+    "review_snippets": [
+      "Great value for casual jogging",
+      "Comfortable right out of the box",
+      "Feels light enough for 5K runs"
+    ],
+    "attributes": {
+      "product_type": "road running shoe",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "mesh",
+        "rubber",
+        "EVA"
+      ],
+      "intended_use": [
+        "running",
+        "casual",
+        "casual joggers"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Feels light enough for 5K runs",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "4e5fdc793be0",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P012",
+    "category": "footwear",
+    "brand": "Boreal",
+    "title": "Boreal ThermoGrip Insulated Snow Boot",
+    "description": "Waterproof insulated snow boot with a rubber shell, removable felt liner and aggressive traction sole. Rated to -25F. Weighs 3 lb 4 oz (1.47 kg) per pair.",
+    "price_usd": 109.0,
+    "average_rating": 4.5,
+    "num_reviews": 930,
+    "review_snippets": [
+      "Warm and dry in deep snow",
+      "Heavy but keeps feet warm at -20F",
+      "No leaks after a whole winter"
+    ],
+    "attributes": {
+      "product_type": "snow boot",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Waterproof insulated snow boot with a rubber shell, removable felt liner and aggressive traction sole.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 1474.2,
+        "raw": "3 lb 4 oz",
+        "basis": "per_pair"
+      },
+      "materials": [
+        "rubber",
+        "felt"
+      ],
+      "intended_use": [
+        "winter"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "rated_to_fahrenheit": -25.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Warm and dry in deep snow",
+        "source": "rules"
+      },
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Heavy but keeps feet warm at -20F",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "No leaks after a whole winter",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "aaed90b4b5bd",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'cold weather'"
+      ]
+    }
+  },
+  {
+    "product_id": "P013",
+    "category": "footwear",
+    "brand": "KidFlex",
+    "title": "KidFlex Light-Up Kids Sneaker",
+    "description": "Kids sneaker with LED lights in the heel, hook-and-loop straps and a flexible sole. Sizes toddler through big kid.",
+    "price_usd": 29.0,
+    "average_rating": 4.0,
+    "num_reviews": 1120,
+    "review_snippets": [
+      "My daughter loves the lights",
+      "Lights stopped working after two months",
+      "Runs a half size small"
+    ],
+    "attributes": {
+      "product_type": "kids sneaker",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids"
+      ],
+      "features": [
+        "led_lights",
+        "hook_and_loop_straps"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Lights stopped working after two months",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "8ed195ebddb1",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P014",
+    "category": "electronics",
+    "brand": "SonicPulse",
+    "title": "SonicPulse Wireless Earbuds Lite",
+    "description": "Basic true-wireless earbuds with Bluetooth 5.3, touch controls and a compact charging case. 6 hours per charge, 18 hours with the case. No active noise cancellation. IPX4 splash resistance.",
+    "price_usd": 24.99,
+    "average_rating": 4.1,
+    "num_reviews": 5400,
+    "review_snippets": [
+      "Solid sound for the price",
+      "Perfect basic earbuds, no frills",
+      "Battery lasts about 5 hours, fine for commuting"
+    ],
+    "attributes": {
+      "product_type": "wireless earbuds",
+      "water_resistance": {
+        "status": true,
+        "level": "splash_resistant",
+        "rating": "IPX4",
+        "evidence": "IPX4 splash resistance.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "basic"
+      ],
+      "features": [
+        "wireless",
+        "bluetooth_5_3",
+        "touch_controls",
+        "compact_charging_case",
+        "ipx4_splash_resistance"
+      ],
+      "lacks": [
+        "active_noise_cancellation"
+      ],
+      "specs": {
+        "battery_hours_per_charge": 6.0,
+        "battery_hours_with_case": 18.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "battery",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery lasts about 5 hours, fine for commuting",
+        "source": "llm"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "900132c4aa7d",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P015",
+    "category": "electronics",
+    "brand": "SonicPulse",
+    "title": "SonicPulse Wireless Earbuds Pro",
+    "description": "Premium true-wireless earbuds with hybrid active noise cancellation, transparency mode and Bluetooth 5.3. Up to 8 hours per charge and 30 hours with the wireless charging case. IPX4 rated.",
+    "price_usd": 59.99,
+    "average_rating": 4.6,
+    "num_reviews": 3100,
+    "review_snippets": [
+      "The ANC blocks out the train nicely",
+      "Battery easily lasts a work week",
+      "Best sound at this price and the mic is great for calls"
+    ],
+    "attributes": {
+      "product_type": "wireless earbuds",
+      "water_resistance": {
+        "status": true,
+        "level": "splash_resistant",
+        "rating": "IPX4",
+        "evidence": "IPX4 rated.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "premium"
+      ],
+      "features": [
+        "active_noise_cancellation",
+        "wireless",
+        "bluetooth_5_3",
+        "hybrid_active_noise_cancellation",
+        "transparency_mode",
+        "ipx4_rated"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 8.0,
+        "battery_hours_with_case": 30.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "battery",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery easily lasts a work week",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2dbc949d9f07",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P016",
+    "category": "electronics",
+    "brand": "SonicPulse",
+    "title": "SonicPulse Studio ANC Over-Ear Headphones",
+    "description": "Over-ear wireless headphones with adaptive active noise cancellation, 45-hour battery, memory-foam ear cups and multipoint Bluetooth. Folds flat for travel.",
+    "price_usd": 149.0,
+    "average_rating": 4.7,
+    "num_reviews": 1820,
+    "review_snippets": [
+      "Comfortable for all-day wear",
+      "Noise cancelling is excellent on flights",
+      "Bulky compared to earbuds"
+    ],
+    "attributes": {
+      "product_type": "over-ear headphones",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "memory foam"
+      ],
+      "intended_use": [
+        "travel",
+        "wireless"
+      ],
+      "features": [
+        "active_noise_cancellation",
+        "wireless",
+        "adaptive_active_noise_cancellation",
+        "multipoint_bluetooth"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 45.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Bulky compared to earbuds",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1bed6e0e4b0f",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P017",
+    "category": "electronics",
+    "brand": "BassLine",
+    "title": "BassLine Buds X Wireless Earbuds",
+    "description": "Budget wireless earbuds with boosted bass, Bluetooth 5.0 and a 5-hour battery. Includes a pocket-size charging case.",
+    "price_usd": 19.99,
+    "average_rating": 3.4,
+    "num_reviews": 2100,
+    "review_snippets": [
+      "Left earbud stopped working after a month",
+      "Bass is good for the price",
+      "Connection drops all the time"
+    ],
+    "attributes": {
+      "product_type": "wireless earbuds",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "budget"
+      ],
+      "features": [
+        "wireless",
+        "boosted_bass",
+        "bluetooth_5_0"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 5.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Left earbud stopped working after a month",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "6afda5d5f426",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P018",
+    "category": "electronics",
+    "brand": "VoltCore",
+    "title": "VoltCore 10000mAh Slim Power Bank",
+    "description": "Slim 10,000mAh power bank with USB-C and USB-A ports and 12W output. Weighs 7.4 oz (210 g). Charges most phones about two times.",
+    "price_usd": 27.99,
+    "average_rating": 4.4,
+    "num_reviews": 3800,
+    "review_snippets": [
+      "Fits in a jeans pocket and charges twice",
+      "Charges slowly compared to my old one",
+      "Solid build"
+    ],
+    "attributes": {
+      "product_type": "power bank",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 209.8,
+        "raw": "7.4 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "usb_c",
+        "usb_a",
+        "output_12w"
+      ],
+      "lacks": [],
+      "specs": {
+        "capacity_mah": 10000.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Solid build",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "33ff6b873d74",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P019",
+    "category": "electronics",
+    "brand": "VoltCore",
+    "title": "VoltCore 20000mAh Fast-Charge Power Bank Pro",
+    "description": "20,000mAh power bank with 45W USB-C Power Delivery that can charge laptops, plus a digital battery display. Weighs 14.1 oz (400 g). Three output ports.",
+    "price_usd": 44.99,
+    "average_rating": 4.6,
+    "num_reviews": 2100,
+    "review_snippets": [
+      "Charged my laptop and phone at the same time",
+      "Heavy but worth it for travel",
+      "Display is handy"
+    ],
+    "attributes": {
+      "product_type": "power bank",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 399.7,
+        "raw": "14.1 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "usb_c_power_delivery",
+        "digital_battery_display"
+      ],
+      "lacks": [],
+      "specs": {
+        "capacity_mah": 20000.0,
+        "output_w": 45.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Heavy but worth it for travel",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "f695de473c76",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P020",
+    "category": "electronics",
+    "brand": "ClearView",
+    "title": "ClearView 27-inch 4K IPS Monitor",
+    "description": "27-inch 4K IPS monitor at 60Hz with USB-C 65W power delivery and a height-adjustable stand. Covers 99% sRGB.",
+    "price_usd": 329.0,
+    "average_rating": 4.5,
+    "num_reviews": 1450,
+    "review_snippets": [
+      "Sharp text and one-cable laptop setup",
+      "Colors look great out of the box",
+      "Speakers are weak, use headphones"
+    ],
+    "attributes": {
+      "product_type": "monitor",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "usb_c_power_delivery",
+        "height_adjustable_stand"
+      ],
+      "lacks": [],
+      "specs": {
+        "size_inches": 27.0,
+        "refresh_rate_hz": 60.0,
+        "coverage_srgb_percent": 99.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "d9178b92d586",
+      "notes": [
+        "dropped spec 'resolution_4k=True' (number not found in description)",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P021",
+    "category": "electronics",
+    "brand": "PixelTab",
+    "title": "PixelTab 10 Tablet",
+    "description": "10.1-inch tablet with 64GB storage, 10 hours of rated battery life and a quad-core processor. Weighs 1.1 lb (500 g).",
+    "price_usd": 189.0,
+    "average_rating": 4.2,
+    "num_reviews": 2600,
+    "review_snippets": [
+      "Great for streaming and kids' games",
+      "Battery lasts about 7 hours of video",
+      "Slows down with many apps open"
+    ],
+    "attributes": {
+      "product_type": "tablet",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 499.0,
+        "raw": "1.1 lb",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 10.0,
+        "storage_gb": 64.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "battery",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery lasts about 7 hours of video",
+        "source": "llm"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "ef3fffbc4287",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'electronics'"
+      ]
+    }
+  },
+  {
+    "product_id": "P022",
+    "category": "electronics",
+    "brand": "Orbit",
+    "title": "Orbit Band 5 Fitness Tracker",
+    "description": "Fitness tracker with heart-rate and sleep tracking, 5ATM water resistance and up to 14 days of battery. Weighs 0.9 oz (26 g).",
+    "price_usd": 49.0,
+    "average_rating": 4.3,
+    "num_reviews": 4200,
+    "review_snippets": [
+      "Wore it swimming daily with no issues",
+      "Battery is closer to 10 days",
+      "Step count seems accurate"
+    ],
+    "attributes": {
+      "product_type": "fitness tracker",
+      "water_resistance": {
+        "status": true,
+        "level": "water_resistant",
+        "rating": "5ATM",
+        "evidence": "Fitness tracker with heart-rate and sleep tracking, 5ATM water resistance and up to 14 days of battery.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 25.5,
+        "raw": "0.9 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "sleep"
+      ],
+      "features": [
+        "heart_rate_tracking",
+        "sleep_tracking",
+        "water_resistance"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_days": 14.0,
+        "water_resistance_atm": 5.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Wore it swimming daily with no issues",
+        "source": "rules"
+      },
+      {
+        "aspect": "battery",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery is closer to 10 days",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report the battery falling short"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "bce40ccde112",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'electronics'"
+      ]
+    }
+  },
+  {
+    "product_id": "P023",
+    "category": "electronics",
+    "brand": "Orbit",
+    "title": "Orbit Band 5 Plus GPS Fitness Tracker",
+    "description": "Fitness tracker with built-in GPS, SpO2, heart-rate and sleep tracking and 5ATM water resistance. Up to 7 days of battery. Weighs 1.1 oz (31 g).",
+    "price_usd": 89.0,
+    "average_rating": 4.5,
+    "num_reviews": 1900,
+    "review_snippets": [
+      "GPS locks fast and maps my runs well",
+      "Worth the upgrade for leaving the phone at home",
+      "Battery lasts about a week"
+    ],
+    "attributes": {
+      "product_type": "fitness tracker",
+      "water_resistance": {
+        "status": true,
+        "level": "water_resistant",
+        "rating": "5ATM",
+        "evidence": "Fitness tracker with built-in GPS, SpO2, heart-rate and sleep tracking and 5ATM water resistance.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 31.2,
+        "raw": "1.1 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "sleep"
+      ],
+      "features": [
+        "gps",
+        "spo2",
+        "heart_rate_tracking",
+        "sleep_tracking",
+        "water_resistance"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_days": 7.0,
+        "water_resistance_atm": 5.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "battery",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery lasts about a week",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "342338f9ea45",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'electronics'"
+      ]
+    }
+  },
+  {
+    "product_id": "P024",
+    "category": "electronics",
+    "brand": "AeroPods",
+    "title": "AeroPods Sport Ear-Hook Wireless Earbuds",
+    "description": "Secure ear-hook wireless earbuds made for workouts. Bluetooth 5.2, 9 hours per charge, and three tip sizes in the box.",
+    "price_usd": 44.99,
+    "average_rating": 4.4,
+    "num_reviews": 1750,
+    "review_snippets": [
+      "Survived sweaty runs and a rainy 10K without any problem",
+      "Stay put during burpees",
+      "Sound is decent, the ear hooks take getting used to"
+    ],
+    "attributes": {
+      "product_type": "wireless earbuds",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "workouts"
+      ],
+      "features": [
+        "wireless",
+        "bluetooth_5_2",
+        "ear_hook",
+        "three_tip_sizes"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 9.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Survived sweaty runs and a rainy 10K without any problem",
+        "source": "rules"
+      },
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Stay put during burpees",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "bc61d9dbe3b1",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P025",
+    "category": "electronics",
+    "brand": "BoomCube",
+    "title": "BoomCube Waterproof Bluetooth Speaker",
+    "description": "Portable Bluetooth speaker with IPX7 waterproofing that floats. 12 hours of battery and a built-in carabiner loop. Weighs 1.2 lb (545 g).",
+    "price_usd": 39.99,
+    "average_rating": 4.5,
+    "num_reviews": 6300,
+    "review_snippets": [
+      "Dropped it in the pool and it still works",
+      "Loud for its size",
+      "Battery is closer to 9-10 hours at high volume"
+    ],
+    "attributes": {
+      "product_type": "bluetooth speaker",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": "IPX7",
+        "evidence": "Portable Bluetooth speaker with IPX7 waterproofing that floats.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 544.3,
+        "raw": "1.2 lb",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "wireless",
+        "ipx7_waterproofing",
+        "built_in_carabiner_loop"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 12.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Dropped it in the pool and it still works",
+        "source": "rules"
+      },
+      {
+        "aspect": "battery",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery is closer to 9-10 hours at high volume",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report the battery falling short"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2d057322b546",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'electronics'"
+      ]
+    }
+  },
+  {
+    "product_id": "P026",
+    "category": "electronics",
+    "brand": "ClearTone",
+    "title": "ClearTone USB-C Wired Earphones",
+    "description": "Wired in-ear earphones with a USB-C connector and inline microphone. Tangle-resistant cable. Not wireless.",
+    "price_usd": 12.99,
+    "average_rating": 4.0,
+    "num_reviews": 2900,
+    "review_snippets": [
+      "Good sound for cheap and no charging needed",
+      "Mic is okay for calls",
+      "Cable feels thin"
+    ],
+    "attributes": {
+      "product_type": "wired earphones",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "usb_c_connector",
+        "inline_microphone",
+        "tangle_resistant_cable"
+      ],
+      "lacks": [
+        "wireless"
+      ],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2886c6e2d2a6",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'audio'"
+      ]
+    }
+  },
+  {
+    "product_id": "P027",
+    "category": "home",
+    "brand": "CozyNest",
+    "title": "CozyNest Chunky Knit Throw Blanket",
+    "description": "Soft chunky-knit throw made of 100% acrylic, 50 x 60 in, machine washable. A cozy layer for the couch or bed and a popular gift.",
+    "price_usd": 34.99,
+    "average_rating": 4.7,
+    "num_reviews": 3400,
+    "review_snippets": [
+      "So cozy, my mom loved it as a gift",
+      "Sheds a little at first",
+      "Beautiful and warm"
+    ],
+    "attributes": {
+      "product_type": "throw blanket",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "knit",
+        "acrylic"
+      ],
+      "intended_use": [
+        "gift",
+        "couch",
+        "bed"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "04f1d0d2b063",
+      "notes": [
+        "dropped non-numeric spec 'size_in'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P028",
+    "category": "home",
+    "brand": "CozyNest",
+    "title": "CozyNest Microfiber Fleece Blanket",
+    "description": "Lightweight microfiber fleece blanket, 50 x 60 in, weighs 1.2 lb (545 g). Soft, wrinkle-resistant and machine washable.",
+    "price_usd": 19.99,
+    "average_rating": 4.4,
+    "num_reviews": 8200,
+    "review_snippets": [
+      "Great value and very soft",
+      "Thinner than I expected",
+      "Washes well"
+    ],
+    "attributes": {
+      "product_type": "fleece blanket",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 544.3,
+        "raw": "1.2 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "microfiber",
+        "fleece"
+      ],
+      "intended_use": [],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "dc38f8ac3f11",
+      "notes": [
+        "dropped non-numeric spec 'size_in'",
+        "dropped non-numeric spec 'weight_lb'",
+        "dropped non-numeric spec 'weight_g'",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'couch'",
+        "dropped unsupported intended_use 'bed'"
+      ]
+    }
+  },
+  {
+    "product_id": "P029",
+    "category": "home",
+    "brand": "LumaGlow",
+    "title": "LumaGlow Ultrasonic Aroma Diffuser",
+    "description": "Ultrasonic essential-oil diffuser with 7 LED colors, a 300 ml tank, auto shut-off and up to 10 hours of runtime.",
+    "price_usd": 28.0,
+    "average_rating": 4.3,
+    "num_reviews": 2500,
+    "review_snippets": [
+      "Quiet and relaxing",
+      "Runs closer to 6-7 hours on high",
+      "Nice gift for a friend"
+    ],
+    "attributes": {
+      "product_type": "aroma diffuser",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "ultrasonic",
+        "auto_shut_off"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "battery",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Runs closer to 6-7 hours on high",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report the battery falling short"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "317103ff197d",
+      "notes": [
+        "dropped non-numeric spec 'tank_capacity_ml'",
+        "dropped non-numeric spec 'runtime_hours'",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'home'"
+      ]
+    }
+  },
+  {
+    "product_id": "P030",
+    "category": "home",
+    "brand": "SereneSleep",
+    "title": "SereneSleep Memory Foam Pillow",
+    "description": "Contoured memory-foam pillow with a cooling gel layer and a washable bamboo cover. Suits back and side sleepers.",
+    "price_usd": 39.0,
+    "average_rating": 4.4,
+    "num_reviews": 3900,
+    "review_snippets": [
+      "My neck pain is gone",
+      "Smells odd for the first few days",
+      "Not really cooling"
+    ],
+    "attributes": {
+      "product_type": "memory foam pillow",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "memory foam",
+        "bamboo"
+      ],
+      "intended_use": [
+        "sleep",
+        "back",
+        "side"
+      ],
+      "features": [
+        "cooling_gel_layer",
+        "washable_cover"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "fragrance",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Smells odd for the first few days",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report a noticeable smell"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "6fdcfde9e7c8",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P031",
+    "category": "home",
+    "brand": "BrightNest",
+    "title": "BrightNest LED Desk Lamp",
+    "description": "Dimmable LED desk lamp with five color temperatures, USB charging port, touch controls and a flexible arm.",
+    "price_usd": 32.99,
+    "average_rating": 4.5,
+    "num_reviews": 2700,
+    "review_snippets": [
+      "Bright and adjustable, great for reading",
+      "USB port is handy",
+      "Base is a little light"
+    ],
+    "attributes": {
+      "product_type": "desk lamp",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "dimmable",
+        "touch_controls",
+        "usb_charging_port"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1ffffe26cccc",
+      "notes": [
+        "dropped non-numeric spec 'color_temperatures'",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'lighting'"
+      ]
+    }
+  },
+  {
+    "product_id": "P032",
+    "category": "home",
+    "brand": "Hearth & Grain",
+    "title": "Hearth & Grain Soy Candle Trio",
+    "description": "Three hand-poured soy candles in lavender, vanilla and cedar. About 40 hours of burn time each. Comes gift-boxed.",
+    "price_usd": 24.0,
+    "average_rating": 4.6,
+    "num_reviews": 1300,
+    "review_snippets": [
+      "Lovely scent that fills the room",
+      "Gave it as a gift and it was a hit",
+      "Burns evenly"
+    ],
+    "attributes": {
+      "product_type": "soy candle",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "soy wax",
+        "soy"
+      ],
+      "intended_use": [
+        "gift"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "burn_time_hours": 40.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "c2abe9cb3bd4",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P033",
+    "category": "home",
+    "brand": "PureAir",
+    "title": "PureAir HEPA Air Purifier Compact",
+    "description": "True HEPA air purifier for rooms up to 250 sq ft with a 24 dB sleep mode and 3-stage filtration. Weighs 6.5 lb (2.9 kg).",
+    "price_usd": 89.0,
+    "average_rating": 4.4,
+    "num_reviews": 2200,
+    "review_snippets": [
+      "Bedroom air feels fresher and it is very quiet",
+      "Filters are pricey",
+      "Good for allergies"
+    ],
+    "attributes": {
+      "product_type": "air purifier",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 2948.3,
+        "raw": "6.5 lb",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "sleep"
+      ],
+      "features": [
+        "true_hepa",
+        "sleep_mode",
+        "three_stage_filtration"
+      ],
+      "lacks": [],
+      "specs": {
+        "room_size_sq_ft": 250.0,
+        "sleep_mode_db": 24.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "785f63f3bfc4",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'home'"
+      ]
+    }
+  },
+  {
+    "product_id": "P034",
+    "category": "home",
+    "brand": "PureAir",
+    "title": "PureAir HEPA Air Purifier Max",
+    "description": "True HEPA air purifier for rooms up to 700 sq ft with an air-quality sensor, auto mode and app control. Weighs 14 lb (6.4 kg).",
+    "price_usd": 179.0,
+    "average_rating": 4.6,
+    "num_reviews": 1500,
+    "review_snippets": [
+      "Handles my open-plan living room easily",
+      "Auto mode is smart and quiet",
+      "Large footprint"
+    ],
+    "attributes": {
+      "product_type": "air purifier",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 6350.3,
+        "raw": "14 lb",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "true_hepa",
+        "air_quality_sensor",
+        "auto_mode",
+        "app_control"
+      ],
+      "lacks": [],
+      "specs": {
+        "room_size_sq_ft": 700.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "7a29746c0be0",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'home'"
+      ]
+    }
+  },
+  {
+    "product_id": "P035",
+    "category": "home",
+    "brand": "TidyBox",
+    "title": "TidyBox Woven Storage Baskets 3-Pack",
+    "description": "Set of three foldable woven fabric storage baskets with handles. Sizes for shelves and closets.",
+    "price_usd": 26.0,
+    "average_rating": 4.3,
+    "num_reviews": 1800,
+    "review_snippets": [
+      "Look nice on a shelf",
+      "Sturdy enough for toys",
+      "Smaller than the photos suggest"
+    ],
+    "attributes": {
+      "product_type": "storage baskets",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "woven fabric"
+      ],
+      "intended_use": [
+        "storage"
+      ],
+      "features": [
+        "foldable",
+        "handles"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Sturdy enough for toys",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2275fa2510b7",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P036",
+    "category": "home",
+    "brand": "SoftTouch",
+    "title": "SoftTouch Cotton Bath Towel Set 6-Piece",
+    "description": "Six-piece towel set in 100% cotton, 600 GSM: two bath towels, two hand towels and two washcloths.",
+    "price_usd": 44.0,
+    "average_rating": 4.5,
+    "num_reviews": 2400,
+    "review_snippets": [
+      "Thick and absorbent",
+      "Lint for the first few washes",
+      "Colors stay bright"
+    ],
+    "attributes": {
+      "product_type": "cotton towel set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "cotton",
+        "100% cotton"
+      ],
+      "intended_use": [
+        "bath",
+        "hand",
+        "washcloth"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "gsm": 600.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "126f83dcf1a3",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P037",
+    "category": "home",
+    "brand": "SwiftVac",
+    "title": "SwiftVac Cordless Stick Vacuum",
+    "description": "Cordless stick vacuum with up to 40 minutes of runtime, a HEPA filter and a detachable handheld unit. Weighs 5.5 lb (2.5 kg).",
+    "price_usd": 149.0,
+    "average_rating": 4.0,
+    "num_reviews": 1350,
+    "review_snippets": [
+      "Strong suction on carpet",
+      "Battery only lasted about 18 minutes on max",
+      "Barely got through my apartment, closer to 20 minutes than 40"
+    ],
+    "attributes": {
+      "product_type": "cordless stick vacuum",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 2494.8,
+        "raw": "5.5 lb",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "vacuum"
+      ],
+      "features": [
+        "hepa_filter",
+        "detachable_handheld_unit"
+      ],
+      "lacks": [],
+      "specs": {
+        "runtime_minutes": 40.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "battery",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery only lasted about 18 minutes on max",
+        "source": "rules"
+      },
+      {
+        "aspect": "battery",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Barely got through my apartment, closer to 20 minutes than 40",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "2 of 3 reviewers report the battery falling short"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "c022a32ed747",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P038",
+    "category": "home",
+    "brand": "CalmHug",
+    "title": "CalmHug Weighted Blanket 15 lb",
+    "description": "15 lb glass-bead weighted blanket, 48 x 72 in, with a breathable cotton cover. Designed for calming, deeper sleep.",
+    "price_usd": 69.0,
+    "average_rating": 4.5,
+    "num_reviews": 3100,
+    "review_snippets": [
+      "Helps me fall asleep faster",
+      "Too warm for hot sleepers",
+      "Heavy but calming; a great gift for my sister"
+    ],
+    "attributes": {
+      "product_type": "weighted blanket",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "cotton",
+        "glass",
+        "glass-bead"
+      ],
+      "intended_use": [
+        "sleep",
+        "relaxation"
+      ],
+      "features": [
+        "breathable_cotton_cover"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_lb": 15.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Heavy but calming; a great gift for my sister",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "0343a44b7e0f",
+      "notes": [
+        "dropped non-numeric spec 'dimensions_in'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P039",
+    "category": "beauty",
+    "brand": "Velvet Dew",
+    "title": "Velvet Dew Hydrating Face Moisturizer",
+    "description": "Lightweight daily moisturizer with hyaluronic acid and ceramides for normal to dry skin. 1.7 oz. Fragrance-free.",
+    "price_usd": 22.0,
+    "average_rating": 4.5,
+    "num_reviews": 3600,
+    "review_snippets": [
+      "Hydrates all day without feeling greasy",
+      "Absorbs quickly under makeup",
+      "Small jar for the price"
+    ],
+    "attributes": {
+      "product_type": "face moisturizer",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "hyaluronic acid",
+        "ceramides"
+      ],
+      "intended_use": [
+        "everyday",
+        "daily"
+      ],
+      "features": [
+        "fragrance_free"
+      ],
+      "lacks": [],
+      "specs": {
+        "volume_oz": 1.7
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "6e35d596b9a5",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P040",
+    "category": "beauty",
+    "brand": "Velvet Dew",
+    "title": "Velvet Dew Night Repair Cream",
+    "description": "Rich night cream with retinol and peptides for dry and mature skin. 1.7 oz.",
+    "price_usd": 38.0,
+    "average_rating": 4.6,
+    "num_reviews": 1700,
+    "review_snippets": [
+      "Skin looks smoother after three weeks",
+      "A little irritating at first",
+      "Luxurious texture"
+    ],
+    "attributes": {
+      "product_type": "night cream",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "retinol",
+        "peptides"
+      ],
+      "intended_use": [
+        "dry",
+        "mature skin"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "volume_oz": 1.7
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "fe954638443e",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P041",
+    "category": "beauty",
+    "brand": "SunVeil",
+    "title": "SunVeil Daily Sunscreen SPF 50",
+    "description": "Broad-spectrum SPF 50 lightweight lotion, water resistant for 80 minutes. Reef-friendly formula. 3 oz.",
+    "price_usd": 16.0,
+    "average_rating": 4.4,
+    "num_reviews": 5100,
+    "review_snippets": [
+      "No white cast and did not sting",
+      "Held up through a swim",
+      "Runs out fast"
+    ],
+    "attributes": {
+      "product_type": "sunscreen lotion",
+      "water_resistance": {
+        "status": true,
+        "level": "water_resistant",
+        "rating": null,
+        "evidence": "Broad-spectrum SPF 50 lightweight lotion, water resistant for 80 minutes.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "sun protection"
+      ],
+      "features": [
+        "water_resistant"
+      ],
+      "lacks": [],
+      "specs": {
+        "coverage_minutes": 80.0,
+        "volume_oz": 3.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Held up through a swim",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "25ab99f3a5a8",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P042",
+    "category": "beauty",
+    "brand": "Bloomhaus",
+    "title": "Bloomhaus Lavender Spa Gift Set",
+    "description": "Gift box with lavender bath salts, body butter, shower gel and pillow mist. A relaxing present for her.",
+    "price_usd": 42.0,
+    "average_rating": 4.7,
+    "num_reviews": 2100,
+    "review_snippets": [
+      "Bought for my mom and she adored it",
+      "Beautiful packaging",
+      "Scent is calming, not overpowering"
+    ],
+    "attributes": {
+      "product_type": "gift set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "relaxation",
+        "gift"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2e2c430a3ce0",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P043",
+    "category": "beauty",
+    "brand": "Glow Ritual",
+    "title": "Glow Ritual Vitamin C Serum",
+    "description": "15% vitamin C serum with hyaluronic acid for brightening. 1 oz.",
+    "price_usd": 29.0,
+    "average_rating": 4.2,
+    "num_reviews": 4400,
+    "review_snippets": [
+      "Skin looked brighter after four weeks",
+      "Turned orange and oxidized after two months",
+      "Stings a bit at first"
+    ],
+    "attributes": {
+      "product_type": "vitamin c serum",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "brightening"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "vitamin_c_percent": 15.0,
+        "volume_oz": 1.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "7ab233293efa",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P044",
+    "category": "beauty",
+    "brand": "PureLoc",
+    "title": "PureLoc Sulfate-Free Shampoo",
+    "description": "Sulfate-free shampoo for color-treated hair, 16 oz, with coconut oil and keratin.",
+    "price_usd": 14.0,
+    "average_rating": 4.3,
+    "num_reviews": 3000,
+    "review_snippets": [
+      "Color lasts longer",
+      "Gentle on my scalp",
+      "Doesn't lather much"
+    ],
+    "attributes": {
+      "product_type": "shampoo",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "coconut oil",
+        "keratin"
+      ],
+      "intended_use": [
+        "color treated hair"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "volume_oz": 16.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "ca74eac4bbe1",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P045",
+    "category": "beauty",
+    "brand": "SilkWave",
+    "title": "SilkWave Ionic Hair Dryer",
+    "description": "1875W ionic hair dryer with three heat settings and a cool shot button. Weighs 1.1 lb (500 g).",
+    "price_usd": 59.0,
+    "average_rating": 4.4,
+    "num_reviews": 2600,
+    "review_snippets": [
+      "Dries my hair quickly with less frizz",
+      "A bit loud",
+      "Light enough for long styling"
+    ],
+    "attributes": {
+      "product_type": "hair dryer",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 499.0,
+        "raw": "1.1 lb",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "ionic",
+        "cool_shot_button"
+      ],
+      "lacks": [],
+      "specs": {
+        "power_w": 1875.0,
+        "volume_lb": 1.1,
+        "volume_g": 500.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Light enough for long styling",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "e6f8a622ec80",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P046",
+    "category": "beauty",
+    "brand": "SilkWave",
+    "title": "SilkWave Pro Brushless Ionic Hair Dryer",
+    "description": "Brushless-motor ionic hair dryer with diffuser, five heat settings and a 1.0 lb (450 g) body. Runs quieter than standard dryers.",
+    "price_usd": 129.0,
+    "average_rating": 4.6,
+    "num_reviews": 900,
+    "review_snippets": [
+      "Noticeably quieter and faster",
+      "Diffuser is great for curls",
+      "Pricey but salon quality"
+    ],
+    "attributes": {
+      "product_type": "hair dryer",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "hair drying"
+      ],
+      "features": [
+        "brushless_motor",
+        "ionic"
+      ],
+      "lacks": [],
+      "specs": {
+        "body_weight_lb": 1.0,
+        "body_weight_g": 450.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2a3e4af42e77",
+      "notes": [
+        "dropped spec 'heat_settings=5' (number not found in description)",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P047",
+    "category": "beauty",
+    "brand": "Petal Soft",
+    "title": "Petal Soft Lip Balm Trio",
+    "description": "Set of three moisturizing lip balms in mint, vanilla and berry with shea butter.",
+    "price_usd": 9.0,
+    "average_rating": 4.5,
+    "num_reviews": 6000,
+    "review_snippets": [
+      "Keeps my lips soft all day",
+      "Great stocking stuffer",
+      "Mint is strong"
+    ],
+    "attributes": {
+      "product_type": "lip balm",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "shea_butter"
+      ],
+      "intended_use": [
+        "moisturizing"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "9e6b9545e601",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P048",
+    "category": "beauty",
+    "brand": "Aura",
+    "title": "Aura Matte Liquid Lipstick",
+    "description": "Long-wear matte liquid lipstick in 12 shades. Transfer-resistant formula.",
+    "price_usd": 18.0,
+    "average_rating": 4.1,
+    "num_reviews": 2100,
+    "review_snippets": [
+      "Stays put through lunch",
+      "Dries my lips out",
+      "Shade matches the swatch"
+    ],
+    "attributes": {
+      "product_type": "liquid lipstick",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "long wear",
+        "transfer resistant"
+      ],
+      "features": [
+        "transfer_resistant"
+      ],
+      "lacks": [],
+      "specs": {
+        "shades": 12.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Stays put through lunch",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "164ba39447cb",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P049",
+    "category": "beauty",
+    "brand": "ClearSkin",
+    "title": "ClearSkin Gentle Foaming Cleanser",
+    "description": "Gentle foaming facial cleanser for sensitive skin, pH balanced, 6.7 oz.",
+    "price_usd": 13.0,
+    "average_rating": 4.4,
+    "num_reviews": 3300,
+    "review_snippets": [
+      "No scent at all and it works for my sensitive skin",
+      "Doesn't remove waterproof mascara",
+      "Did not irritate my skin"
+    ],
+    "attributes": {
+      "product_type": "facial cleanser",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "gentle",
+        "foaming",
+        "sensitive skin"
+      ],
+      "features": [
+        "ph_balanced"
+      ],
+      "lacks": [],
+      "specs": {
+        "volume_oz": 6.7
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "fragrance",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "No scent at all and it works for my sensitive skin",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "fc27c76bd493",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P050",
+    "category": "beauty",
+    "brand": "Ember",
+    "title": "Ember Rose Eau de Parfum",
+    "description": "50 ml eau de parfum with notes of rose, amber and musk.",
+    "price_usd": 58.0,
+    "average_rating": 4.3,
+    "num_reviews": 900,
+    "review_snippets": [
+      "Smells elegant and lasts most of the day",
+      "Gifted to my mother and she wears it daily",
+      "Bottle is smaller than expected"
+    ],
+    "attributes": {
+      "product_type": "eau de parfum",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "volume_ml": 50.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "7330d172f0d9",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'fragrance'"
+      ]
+    }
+  },
+  {
+    "product_id": "P051",
+    "category": "sports",
+    "brand": "FlexCore",
+    "title": "FlexCore Yoga Mat 6mm",
+    "description": "6 mm TPE yoga mat, 72 x 24 in, weighs 2.2 lb (1 kg). Textured surface with a carry strap.",
+    "price_usd": 24.99,
+    "average_rating": 4.4,
+    "num_reviews": 4700,
+    "review_snippets": [
+      "Good cushioning for the price",
+      "Gets slippery with sweaty hands",
+      "Edges curl a little"
+    ],
+    "attributes": {
+      "product_type": "yoga mat",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 997.9,
+        "raw": "2.2 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "TPE"
+      ],
+      "intended_use": [
+        "yoga"
+      ],
+      "features": [
+        "carry_strap"
+      ],
+      "lacks": [],
+      "specs": {
+        "thickness_mm": 6.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "grip",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Gets slippery with sweaty hands",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it is slippery"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "797e5b5b73ba",
+      "notes": [
+        "dropped non-numeric spec 'dimensions_in'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P052",
+    "category": "sports",
+    "brand": "FlexCore",
+    "title": "FlexCore Pro Non-Slip Yoga Mat 8mm",
+    "description": "8 mm natural-rubber yoga mat with alignment lines and a non-slip surface. 72 x 26 in, weighs 4.4 lb (2 kg).",
+    "price_usd": 54.0,
+    "average_rating": 4.7,
+    "num_reviews": 1500,
+    "review_snippets": [
+      "Stays put even in hot yoga",
+      "Extra cushioning is great for knees",
+      "Heavy to carry"
+    ],
+    "attributes": {
+      "product_type": "yoga mat",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 1995.8,
+        "raw": "4.4 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "natural rubber",
+        "natural-rubber"
+      ],
+      "intended_use": [
+        "yoga"
+      ],
+      "features": [
+        "non_slip_surface",
+        "alignment_lines"
+      ],
+      "lacks": [],
+      "specs": {
+        "thickness_mm": 8.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Stays put even in hot yoga",
+        "source": "rules"
+      },
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Heavy to carry",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "e94f73e8b804",
+      "notes": [
+        "dropped non-numeric spec 'dimensions_in'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P053",
+    "category": "sports",
+    "brand": "IronPeak",
+    "title": "IronPeak Adjustable Dumbbell Pair 5-52 lb",
+    "description": "Pair of adjustable dumbbells from 5 to 52.5 lb each with a quick-dial selector and storage tray.",
+    "price_usd": 279.0,
+    "average_rating": 4.6,
+    "num_reviews": 1200,
+    "review_snippets": [
+      "Replaces a whole rack in my apartment",
+      "Dial is quick to change",
+      "Handles feel a bit thick"
+    ],
+    "attributes": {
+      "product_type": "adjustable dumbbell pair",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "quick_dial_selector",
+        "storage_tray"
+      ],
+      "lacks": [],
+      "specs": {
+        "min_weight_lb": 5.0,
+        "max_weight_lb": 52.5
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "83ee1b9bdf19",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'strength training'"
+      ]
+    }
+  },
+  {
+    "product_id": "P054",
+    "category": "sports",
+    "brand": "SprintLine",
+    "title": "SprintLine Resistance Bands Set of 5",
+    "description": "Set of five latex resistance bands from 10 to 50 lb with door anchor, handles and carry bag.",
+    "price_usd": 17.0,
+    "average_rating": 4.4,
+    "num_reviews": 5200,
+    "review_snippets": [
+      "Great for travel workouts",
+      "One band snapped after a few months",
+      "Good range of resistance"
+    ],
+    "attributes": {
+      "product_type": "resistance bands set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "latex"
+      ],
+      "intended_use": [],
+      "features": [
+        "door_anchor",
+        "handles",
+        "carry_bag"
+      ],
+      "lacks": [],
+      "specs": {
+        "min_weight_lb": 10.0,
+        "max_weight_lb": 50.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "One band snapped after a few months",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "09be01620777",
+      "notes": [
+        "dropped spec 'set_of=5' (number not found in description)",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'strength training'"
+      ]
+    }
+  },
+  {
+    "product_id": "P055",
+    "category": "sports",
+    "brand": "AquaLap",
+    "title": "AquaLap Anti-Fog Swim Goggles",
+    "description": "Swim goggles with anti-fog lenses, UV protection and an adjustable silicone strap.",
+    "price_usd": 14.0,
+    "average_rating": 4.0,
+    "num_reviews": 2200,
+    "review_snippets": [
+      "Comfortable seal with no leaking",
+      "Fogged up after ten minutes",
+      "Fine for casual laps"
+    ],
+    "attributes": {
+      "product_type": "swim goggles",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "silicone"
+      ],
+      "intended_use": [
+        "swimming"
+      ],
+      "features": [
+        "anti_fog_lenses",
+        "uv_protection",
+        "adjustable_silicone_strap"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Comfortable seal with no leaking",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "3afccc764e2a",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P056",
+    "category": "sports",
+    "brand": "CourtKing",
+    "title": "CourtKing Indoor/Outdoor Basketball",
+    "description": "Size 7 composite-leather basketball for indoor and outdoor courts with deep channels for grip.",
+    "price_usd": 27.0,
+    "average_rating": 4.5,
+    "num_reviews": 3100,
+    "review_snippets": [
+      "Great grip and holds air",
+      "Handled outdoor concrete well",
+      "A bit slick out of the box"
+    ],
+    "attributes": {
+      "product_type": "basketball",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "leather",
+        "composite-leather"
+      ],
+      "intended_use": [
+        "indoor",
+        "outdoor"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "size": 7.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Great grip and holds air",
+        "source": "rules"
+      },
+      {
+        "aspect": "grip",
+        "polarity": "negative",
+        "hedged": true,
+        "scope": null,
+        "quote": "A bit slick out of the box",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it is slippery"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "304ce4569cdb",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P057",
+    "category": "sports",
+    "brand": "ZenRoll",
+    "title": "ZenRoll Foam Roller 18 in",
+    "description": "High-density 18-inch foam roller for muscle recovery. Weighs 1.0 lb (450 g).",
+    "price_usd": 21.0,
+    "average_rating": 4.5,
+    "num_reviews": 2800,
+    "review_snippets": [
+      "Firm and works for sore quads",
+      "Holds shape after months",
+      "Very firm for beginners"
+    ],
+    "attributes": {
+      "product_type": "foam roller",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 453.6,
+        "raw": "1.0 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "foam",
+        "high-density"
+      ],
+      "intended_use": [
+        "muscle recovery"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Holds shape after months",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "aad35cccf13f",
+      "notes": [
+        "dropped non-numeric spec 'length'",
+        "dropped non-numeric spec 'weight'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P058",
+    "category": "sports",
+    "brand": "SwiftRide",
+    "title": "SwiftRide Road Cycling Helmet",
+    "description": "Road cycling helmet with MIPS, 18 vents and an adjustable dial fit. Weighs 9.5 oz (270 g).",
+    "price_usd": 64.0,
+    "average_rating": 4.5,
+    "num_reviews": 1900,
+    "review_snippets": [
+      "Light and well ventilated",
+      "Fit dial is easy to use",
+      "Visor sold separately"
+    ],
+    "attributes": {
+      "product_type": "cycling helmet",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 269.3,
+        "raw": "9.5 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "cycling",
+        "road cycling"
+      ],
+      "features": [
+        "mips",
+        "adjustable_dial_fit"
+      ],
+      "lacks": [],
+      "specs": {
+        "vent_count": 18.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Light and well ventilated",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "6b0004ab19c9",
+      "notes": [
+        "dropped unsupported feature 'ventilation'",
+        "dropped non-numeric spec 'weight'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P059",
+    "category": "sports",
+    "brand": "HydroFlow",
+    "title": "HydroFlow Insulated Water Bottle 32 oz",
+    "description": "Double-wall stainless steel bottle that keeps drinks cold for 24 hours or hot for 12. Leakproof lid. 32 oz.",
+    "price_usd": 29.0,
+    "average_rating": 4.5,
+    "num_reviews": 5100,
+    "review_snippets": [
+      "Ice still frozen the next morning",
+      "Leaks when tipped over in my bag",
+      "Fits my cup holder"
+    ],
+    "attributes": {
+      "product_type": "water bottle",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "stainless steel"
+      ],
+      "intended_use": [
+        "cold",
+        "hot"
+      ],
+      "features": [
+        "double_wall",
+        "leakproof_lid"
+      ],
+      "lacks": [],
+      "specs": {
+        "cold_retention_hours": 24.0,
+        "hot_retention_hours": 12.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Leaks when tipped over in my bag",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "fe1b19377a00",
+      "notes": [
+        "dropped non-numeric spec 'capacity'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P060",
+    "category": "sports",
+    "brand": "PaceMate",
+    "title": "PaceMate Lightweight Running Belt",
+    "description": "Lightweight stretch running belt with a zip pocket for a phone and keys. Adjustable waist strap. Weighs 2.1 oz (60 g).",
+    "price_usd": 16.0,
+    "average_rating": 4.3,
+    "num_reviews": 3300,
+    "review_snippets": [
+      "Doesn't bounce while I run",
+      "Kept my phone dry on a rainy run",
+      "Fits my large phone"
+    ],
+    "attributes": {
+      "product_type": "running belt",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 59.5,
+        "raw": "2.1 oz",
+        "basis": "item"
+      },
+      "materials": [
+        "stretch"
+      ],
+      "intended_use": [
+        "running"
+      ],
+      "features": [
+        "zip_pocket",
+        "adjustable_waist_strap"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Kept my phone dry on a rainy run",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "fc471294eea4",
+      "notes": [
+        "dropped non-numeric spec 'weight'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P061",
+    "category": "sports",
+    "brand": "GripMax",
+    "title": "GripMax Speed Jump Rope",
+    "description": "Adjustable speed jump rope with ball-bearing handles and a steel cable.",
+    "price_usd": 11.0,
+    "average_rating": 4.4,
+    "num_reviews": 4100,
+    "review_snippets": [
+      "Spins smoothly",
+      "Good for double-unders",
+      "Cable frays over time"
+    ],
+    "attributes": {
+      "product_type": "speed jump rope",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "steel"
+      ],
+      "intended_use": [],
+      "features": [
+        "ball_bearing_handles",
+        "adjustable_speed"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Cable frays over time",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "8e8150518274",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'exercise'"
+      ]
+    }
+  },
+  {
+    "product_id": "P062",
+    "category": "sports",
+    "brand": "StrideWear",
+    "title": "StrideWear Quick-Dry Running Shorts",
+    "description": "Quick-dry 2-in-1 running shorts with a zip pocket and reflective trim. Weighs 4.5 oz (128 g).",
+    "price_usd": 28.0,
+    "average_rating": 4.3,
+    "num_reviews": 1600,
+    "review_snippets": [
+      "Comfortable and no chafing",
+      "Pocket fits my phone",
+      "Runs slightly small"
+    ],
+    "attributes": {
+      "product_type": "running shorts",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 127.6,
+        "raw": "4.5 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "running",
+        "quick dry"
+      ],
+      "features": [
+        "zip_pocket",
+        "reflective_trim"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_oz": 4.5,
+        "weight_g": 128.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "b028c9375d1b",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P063",
+    "category": "kitchen",
+    "brand": "BrewMate",
+    "title": "BrewMate Electric Kettle 1.7L",
+    "description": "1.7L stainless steel electric kettle, 1500W, with auto shut-off, boil-dry protection and a cordless 360-degree base.",
+    "price_usd": 34.99,
+    "average_rating": 4.6,
+    "num_reviews": 6100,
+    "review_snippets": [
+      "Boils fast and shuts off reliably",
+      "Spout pours cleanly",
+      "Lid is a little stiff"
+    ],
+    "attributes": {
+      "product_type": "electric kettle",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "stainless steel"
+      ],
+      "intended_use": [],
+      "features": [
+        "auto_shut_off",
+        "boil_dry_protection",
+        "cordless_360_degree_base"
+      ],
+      "lacks": [],
+      "specs": {
+        "volume_l": 1.7,
+        "power_w": 1500.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "9ed7664af791",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P064",
+    "category": "kitchen",
+    "brand": "BrewMate",
+    "title": "BrewMate Precision Variable-Temp Kettle",
+    "description": "1.0L gooseneck kettle with adjustable temperatures from 140F to 212F, a one-hour keep-warm function and a precision pour spout.",
+    "price_usd": 69.0,
+    "average_rating": 4.6,
+    "num_reviews": 1600,
+    "review_snippets": [
+      "Perfect for pour-over and green tea",
+      "Keep-warm mode is convenient",
+      "Smaller capacity than my old kettle"
+    ],
+    "attributes": {
+      "product_type": "gooseneck kettle",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "adjustable_temperatures",
+        "one_hour_keep_warm",
+        "precision_pour_spout"
+      ],
+      "lacks": [],
+      "specs": {
+        "volume_l": 1.0,
+        "temperature_min_f": 140.0,
+        "temperature_max_f": 212.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "42fc7e7de25e",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P065",
+    "category": "kitchen",
+    "brand": "BlendRight",
+    "title": "BlendRight Personal Blender 600W",
+    "description": "600W personal blender with two 20 oz to-go cups. Blades handle fruit and soft ingredients.",
+    "price_usd": 39.0,
+    "average_rating": 4.2,
+    "num_reviews": 3900,
+    "review_snippets": [
+      "Perfect for morning smoothies",
+      "Struggles with ice",
+      "Easy to clean"
+    ],
+    "attributes": {
+      "product_type": "personal blender",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "two_20_oz_cups",
+        "blades_handle_fruit_and_soft_ingredients"
+      ],
+      "lacks": [],
+      "specs": {
+        "power_w": 600.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2a94df77b92b",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P066",
+    "category": "kitchen",
+    "brand": "BlendRight",
+    "title": "BlendRight Power Blender 1200W",
+    "description": "1200W countertop blender with a 64 oz pitcher that crushes ice, plus a self-clean cycle and variable speed dial.",
+    "price_usd": 119.0,
+    "average_rating": 4.6,
+    "num_reviews": 2000,
+    "review_snippets": [
+      "Crushes ice and makes silky soups",
+      "Loud but powerful",
+      "Big pitcher for family batches"
+    ],
+    "attributes": {
+      "product_type": "countertop blender",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "cycling"
+      ],
+      "features": [
+        "self_clean_cycle",
+        "variable_speed_dial"
+      ],
+      "lacks": [],
+      "specs": {
+        "power_w": 1200.0,
+        "pitcher_capacity_oz": 64.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "d125efbcbae3",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P067",
+    "category": "kitchen",
+    "brand": "IronSear",
+    "title": "IronSear Pre-Seasoned Cast Iron Skillet 10 in",
+    "description": "10-inch pre-seasoned cast iron skillet, oven safe to 500F. Weighs 5 lb (2.3 kg). Works on gas, induction and campfires.",
+    "price_usd": 32.0,
+    "average_rating": 4.7,
+    "num_reviews": 7200,
+    "review_snippets": [
+      "Amazing sear and lasts forever",
+      "Heavy but that's cast iron",
+      "Seasoning improved with use"
+    ],
+    "attributes": {
+      "product_type": "cast iron skillet",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 2268.0,
+        "raw": "5 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "cast iron"
+      ],
+      "intended_use": [
+        "camping"
+      ],
+      "features": [
+        "oven_safe",
+        "works_on_gas",
+        "works_on_induction",
+        "works_on_campfires"
+      ],
+      "lacks": [],
+      "specs": {
+        "size_in": 10.0,
+        "oven_safe_to_f": 500.0,
+        "weight_lb": 5.0,
+        "weight_kg": 2.3
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Amazing sear and lasts forever",
+        "source": "rules"
+      },
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Heavy but that's cast iron",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "8cc97c4a1059",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P068",
+    "category": "kitchen",
+    "brand": "CeraChef",
+    "title": "CeraChef Ceramic Nonstick Pan Set 3-Piece",
+    "description": "PFOA-free ceramic nonstick 3-piece pan set with a durable long-lasting coating. Induction compatible, dishwasher safe.",
+    "price_usd": 59.0,
+    "average_rating": 4.1,
+    "num_reviews": 2800,
+    "review_snippets": [
+      "Eggs slide right off at first",
+      "The coating started peeling after four months",
+      "The nonstick wore out quickly, not durable"
+    ],
+    "attributes": {
+      "product_type": "ceramic nonstick pan set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "ceramic",
+        "PFOA-free"
+      ],
+      "intended_use": [],
+      "features": [
+        "induction_compatible",
+        "dishwasher_safe"
+      ],
+      "lacks": [],
+      "specs": {
+        "pieces": 3.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "The coating started peeling after four months",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "The nonstick wore out quickly, not durable",
+        "source": "rules"
+      },
+      {
+        "aspect": "grip",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Eggs slide right off at first",
+        "source": "llm"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it is slippery",
+      "2 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "c93baa72f3e4",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P069",
+    "category": "kitchen",
+    "brand": "ChefLine",
+    "title": "ChefLine 8-inch Chef Knife",
+    "description": "8-inch high-carbon stainless steel chef knife with a full tang and pakkawood handle. Weighs 8.1 oz (230 g).",
+    "price_usd": 44.0,
+    "average_rating": 4.6,
+    "num_reviews": 3000,
+    "review_snippets": [
+      "Razor sharp out of the box",
+      "Well balanced",
+      "Not dishwasher safe"
+    ],
+    "attributes": {
+      "product_type": "chef knife",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 229.6,
+        "raw": "8.1 oz",
+        "basis": "item"
+      },
+      "materials": [
+        "stainless steel",
+        "high-carbon stainless steel",
+        "pakkawood"
+      ],
+      "intended_use": [],
+      "features": [
+        "full_tang"
+      ],
+      "lacks": [],
+      "specs": {
+        "size_in": 8.0,
+        "weight_oz": 8.1,
+        "weight_g": 230.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "b1c4122b5135",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P070",
+    "category": "kitchen",
+    "brand": "FreshLock",
+    "title": "FreshLock Glass Food Containers 10-Piece",
+    "description": "Ten-piece glass food storage set with snap-lock lids. Microwave, oven and dishwasher safe.",
+    "price_usd": 29.0,
+    "average_rating": 4.5,
+    "num_reviews": 3800,
+    "review_snippets": [
+      "Lids seal well and no stains",
+      "Heavier than plastic",
+      "Good size variety"
+    ],
+    "attributes": {
+      "product_type": "glass food containers",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "glass"
+      ],
+      "intended_use": [],
+      "features": [
+        "snap_lock_lids",
+        "microwave_safe",
+        "oven_safe",
+        "dishwasher_safe"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Heavier than plastic",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "41ad8ed1d893",
+      "notes": [
+        "dropped spec 'pieces=10' (number not found in description)",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kitchen'"
+      ]
+    }
+  },
+  {
+    "product_id": "P071",
+    "category": "kitchen",
+    "brand": "CrispWave",
+    "title": "CrispWave Air Fryer 4 qt",
+    "description": "4-quart digital air fryer with 8 presets and a nonstick dishwasher-safe basket. Suits one to two people.",
+    "price_usd": 69.0,
+    "average_rating": 4.5,
+    "num_reviews": 8800,
+    "review_snippets": [
+      "Crisps fries with almost no oil",
+      "Compact and easy to clean",
+      "Basket is small for a family"
+    ],
+    "attributes": {
+      "product_type": "air fryer",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "nonstick"
+      ],
+      "intended_use": [],
+      "features": [
+        "digital",
+        "8_presets",
+        "nonstick_dishwasher_safe_basket"
+      ],
+      "lacks": [],
+      "specs": {
+        "capacity_quart": 4.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "e659b795786e",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P072",
+    "category": "kitchen",
+    "brand": "CrispWave",
+    "title": "CrispWave Dual-Basket Air Fryer 8 qt",
+    "description": "8-quart air fryer with two independent baskets and a sync-finish mode so two foods cook at once. Nonstick dishwasher-safe baskets.",
+    "price_usd": 129.0,
+    "average_rating": 4.6,
+    "num_reviews": 2400,
+    "review_snippets": [
+      "Cook chicken and fries at the same time",
+      "Big enough for family dinners",
+      "Takes a lot of counter space"
+    ],
+    "attributes": {
+      "product_type": "air fryer",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "nonstick"
+      ],
+      "intended_use": [
+        "dual basket"
+      ],
+      "features": [
+        "sync_finish_mode",
+        "nonstick_dishwasher_safe_baskets"
+      ],
+      "lacks": [],
+      "specs": {
+        "capacity_quart": 8.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2518beded269",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P073",
+    "category": "kitchen",
+    "brand": "PourPerfect",
+    "title": "PourPerfect Pour-Over Coffee Gift Set",
+    "description": "Glass pour-over dripper with carafe, reusable stainless filter and measuring scoop, packed in a gift box.",
+    "price_usd": 36.0,
+    "average_rating": 4.6,
+    "num_reviews": 900,
+    "review_snippets": [
+      "Beautiful set and makes great coffee",
+      "Gift for my mom and she uses it daily",
+      "Glass is fragile"
+    ],
+    "attributes": {
+      "product_type": "coffee gift set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "glass",
+        "stainless"
+      ],
+      "intended_use": [
+        "gift"
+      ],
+      "features": [
+        "reusable_stainless_filter",
+        "measuring_scoop"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "6d8ee9ce278a",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P074",
+    "category": "kitchen",
+    "brand": "SnapLid",
+    "title": "SnapLid Reusable Silicone Bag Set",
+    "description": "Set of six reusable silicone food storage bags in assorted sizes. Freezer and dishwasher safe.",
+    "price_usd": 15.0,
+    "average_rating": 4.3,
+    "num_reviews": 2500,
+    "review_snippets": [
+      "Replaced my plastic bags",
+      "Hard to dry inside",
+      "Seal is reliable"
+    ],
+    "attributes": {
+      "product_type": "silicone bag set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "silicone"
+      ],
+      "intended_use": [
+        "freezer",
+        "dishwasher"
+      ],
+      "features": [
+        "reusable"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1a1d78140248",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P075",
+    "category": "outdoor",
+    "brand": "Ridgeline",
+    "title": "Ridgeline 2-Person Backpacking Tent",
+    "description": "Freestanding 3-season two-person tent with a waterproof rain fly and taped seams. Weighs 4 lb 6 oz (1.99 kg) packed.",
+    "price_usd": 159.0,
+    "average_rating": 4.5,
+    "num_reviews": 1900,
+    "review_snippets": [
+      "Stayed dry through an overnight thunderstorm",
+      "Easy setup in five minutes",
+      "Tight for two adults with gear"
+    ],
+    "attributes": {
+      "product_type": "backpacking tent",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Freestanding 3-season two-person tent with a waterproof rain fly and taped seams.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 1984.5,
+        "raw": "4 lb 6 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "two person",
+        "freestanding",
+        "3 season"
+      ],
+      "features": [
+        "waterproof_rain_fly",
+        "taped_seams"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": "heavy",
+        "quote": "Stayed dry through an overnight thunderstorm",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "c5f83de82d83",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P076",
+    "category": "outdoor",
+    "brand": "TrailMate",
+    "title": "TrailMate 40L Hiking Backpack",
+    "description": "40L daypack with a ventilated back panel, padded hip belt, hydration sleeve and an included rain cover. Weighs 2 lb 3 oz (1 kg).",
+    "price_usd": 79.0,
+    "average_rating": 4.4,
+    "num_reviews": 2300,
+    "review_snippets": [
+      "Comfortable on all-day hikes",
+      "Rain cover works well",
+      "Zippers feel a bit flimsy"
+    ],
+    "attributes": {
+      "product_type": "hiking backpack",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 992.2,
+        "raw": "2 lb 3 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "daypack"
+      ],
+      "features": [
+        "hydration_sleeve",
+        "included_rain_cover"
+      ],
+      "lacks": [],
+      "specs": {
+        "volume_liters": 40.0,
+        "weight_lb": 2.0,
+        "weight_oz": 3.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Rain cover works well",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": true,
+        "scope": null,
+        "quote": "Zippers feel a bit flimsy",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "cf0568e326f4",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P077",
+    "category": "outdoor",
+    "brand": "TrailMate",
+    "title": "TrailMate Pro 55L Backpacking Pack",
+    "description": "55L backpacking pack with an adjustable suspension frame, load-lifter straps and an included rain cover. Weighs 3 lb 5 oz (1.5 kg).",
+    "price_usd": 139.0,
+    "average_rating": 4.6,
+    "num_reviews": 1100,
+    "review_snippets": [
+      "Carries 35 lb comfortably for days",
+      "Great fit adjustments",
+      "Overkill for day trips"
+    ],
+    "attributes": {
+      "product_type": "backpacking pack",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 1502.5,
+        "raw": "3 lb 5 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "backpacking"
+      ],
+      "features": [
+        "adjustable_suspension_frame",
+        "load_lifter_straps",
+        "included_rain_cover"
+      ],
+      "lacks": [],
+      "specs": {
+        "volume_liters": 55.0,
+        "weight_lb": 3.0,
+        "weight_oz": 5.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1aa610d246a6",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P078",
+    "category": "outdoor",
+    "brand": "Emberlight",
+    "title": "Emberlight Rechargeable Camping Lantern",
+    "description": "USB-rechargeable camping lantern with 500 lumens, three modes and up to 12 hours of runtime on low. Weighs 10.6 oz (300 g).",
+    "price_usd": 19.99,
+    "average_rating": 4.5,
+    "num_reviews": 3300,
+    "review_snippets": [
+      "Bright enough for the whole campsite",
+      "Charges quickly",
+      "Handle is a little short"
+    ],
+    "attributes": {
+      "product_type": "camping lantern",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 300.5,
+        "raw": "10.6 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "camping"
+      ],
+      "features": [
+        "usb_rechargeable",
+        "three_modes"
+      ],
+      "lacks": [],
+      "specs": {
+        "lumens": 500.0,
+        "runtime_hours_low": 12.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "254ceea1afb7",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P079",
+    "category": "outdoor",
+    "brand": "SummitWarm",
+    "title": "SummitWarm 20F Mummy Sleeping Bag",
+    "description": "Mummy sleeping bag rated to 20F with synthetic insulation and a compression sack. Weighs 3 lb 2 oz (1.4 kg).",
+    "price_usd": 89.0,
+    "average_rating": 4.4,
+    "num_reviews": 2000,
+    "review_snippets": [
+      "Warm and packs small",
+      "Comfortable down to about 30F, not 20F",
+      "Zipper snags sometimes"
+    ],
+    "attributes": {
+      "product_type": "sleeping bag",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 1417.5,
+        "raw": "3 lb 2 oz",
+        "basis": "item"
+      },
+      "materials": [
+        "synthetic",
+        "synthetic_insulation"
+      ],
+      "intended_use": [
+        "sleep",
+        "sleeping"
+      ],
+      "features": [
+        "compression_sack"
+      ],
+      "lacks": [],
+      "specs": {
+        "rating_fahrenheit": 20.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1370b672c209",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P080",
+    "category": "outdoor",
+    "brand": "RainShield",
+    "title": "RainShield Packable Rain Jacket",
+    "description": "Packable waterproof rain jacket with taped seams and an adjustable hood. Stuffs into its own pocket. Weighs 8.5 oz (241 g).",
+    "price_usd": 59.0,
+    "average_rating": 4.2,
+    "num_reviews": 1700,
+    "review_snippets": [
+      "Kept me dry in light rain and drizzle",
+      "Soaked through in a heavy downpour after about an hour",
+      "Packs down tiny"
+    ],
+    "attributes": {
+      "product_type": "rain jacket",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Packable waterproof rain jacket with taped seams and an adjustable hood.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 241.0,
+        "raw": "8.5 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "rain"
+      ],
+      "features": [
+        "taped_seams",
+        "adjustable_hood",
+        "packable"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_oz": 8.5
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": "light",
+        "quote": "Kept me dry in light rain and drizzle",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "heavy",
+        "quote": "Soaked through in a heavy downpour after about an hour",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "8c4875ca40fd",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P081",
+    "category": "outdoor",
+    "brand": "PathFinder",
+    "title": "PathFinder Carbon Trekking Poles",
+    "description": "Pair of carbon-fiber trekking poles with cork grips and flip-lock adjustment. Weighs 15 oz (425 g) per pair.",
+    "price_usd": 59.0,
+    "average_rating": 4.5,
+    "num_reviews": 1400,
+    "review_snippets": [
+      "Light and strong on steep descents",
+      "Locks hold firm",
+      "Tips wear out fast"
+    ],
+    "attributes": {
+      "product_type": "trekking poles",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 425.2,
+        "raw": "15 oz",
+        "basis": "per_pair"
+      },
+      "materials": [
+        "carbon fiber",
+        "carbon-fiber",
+        "cork"
+      ],
+      "intended_use": [],
+      "features": [
+        "flip_lock_adjustment"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_per_pair_oz": 15.0,
+        "weight_per_pair_g": 425.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Light and strong on steep descents",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Tips wear out fast",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2821173dcebe",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'outdoor'"
+      ]
+    }
+  },
+  {
+    "product_id": "P082",
+    "category": "outdoor",
+    "brand": "AquaPure",
+    "title": "AquaPure Portable Water Filter",
+    "description": "0.1-micron hollow-fiber water filter that treats up to 1,000 L. Weighs 2 oz (57 g). Screws onto standard bottles.",
+    "price_usd": 34.0,
+    "average_rating": 4.5,
+    "num_reviews": 3600,
+    "review_snippets": [
+      "Made stream water taste clean",
+      "Flow slows if you don't backflush",
+      "Tiny and light"
+    ],
+    "attributes": {
+      "product_type": "water filter",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 56.7,
+        "raw": "2 oz",
+        "basis": "item"
+      },
+      "materials": [
+        "hollow-fiber"
+      ],
+      "intended_use": [],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "filter_micron": 0.1
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "weight",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Tiny and light",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "a3c7b8d38ae5",
+      "notes": [
+        "dropped non-numeric spec 'treats_up_to_liters'",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'outdoor'"
+      ]
+    }
+  },
+  {
+    "product_id": "P083",
+    "category": "outdoor",
+    "brand": "CampChef",
+    "title": "CampChef Compact Canister Camp Stove",
+    "description": "Compact canister camp stove that boils 1L of water in about 3.5 minutes. Weighs 3 oz (85 g) with a folding pot support.",
+    "price_usd": 29.0,
+    "average_rating": 4.4,
+    "num_reviews": 2700,
+    "review_snippets": [
+      "Boils fast and packs tiny",
+      "Wobbly with large pots",
+      "Wind reduces performance a lot"
+    ],
+    "attributes": {
+      "product_type": "camp stove",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 85.0,
+        "raw": "3 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [
+        "camping"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "boil_time_minutes": 3.5,
+        "weight_oz": 3.0,
+        "weight_g": 85.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "8a6c45dabb2e",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'outdoor'"
+      ]
+    }
+  },
+  {
+    "product_id": "P084",
+    "category": "outdoor",
+    "brand": "SunGuard",
+    "title": "SunGuard Wide-Brim Sun Hat UPF 50+",
+    "description": "Wide-brim hiking sun hat with UPF 50+ fabric, chin cord and a packable crown.",
+    "price_usd": 24.0,
+    "average_rating": 4.3,
+    "num_reviews": 1900,
+    "review_snippets": [
+      "Great shade on a long hike",
+      "Packs flat in my bag",
+      "Runs slightly large"
+    ],
+    "attributes": {
+      "product_type": "sun hat",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "hiking"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "835454784d46",
+      "notes": [
+        "dropped non-numeric spec 'upf'",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'outdoor'"
+      ]
+    }
+  },
+  {
+    "product_id": "P085",
+    "category": "outdoor",
+    "brand": "Beacon",
+    "title": "Beacon 300-Lumen Rechargeable Headlamp",
+    "description": "Rechargeable headlamp with 300 lumens, a red-light mode and a tilting head. Weighs 3 oz (85 g).",
+    "price_usd": 22.0,
+    "average_rating": 4.4,
+    "num_reviews": 2900,
+    "review_snippets": [
+      "Worked fine through a full downpour on a night hike",
+      "Bright and comfortable",
+      "Battery lasts about 4 hours on high"
+    ],
+    "attributes": {
+      "product_type": "headlamp",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 85.0,
+        "raw": "3 oz",
+        "basis": "item"
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "red_light_mode",
+        "tilting_head"
+      ],
+      "lacks": [],
+      "specs": {
+        "lumens": 300.0,
+        "weight_oz": 3.0,
+        "weight_g": 85.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": "heavy",
+        "quote": "Worked fine through a full downpour on a night hike",
+        "source": "rules"
+      },
+      {
+        "aspect": "battery",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery lasts about 4 hours on high",
+        "source": "llm"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "a4db8face5af",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'outdoor'"
+      ]
+    }
+  },
+  {
+    "product_id": "P086",
+    "category": "outdoor",
+    "brand": "CoolTrek",
+    "title": "CoolTrek 30-Quart Hard Cooler",
+    "description": "30-quart hard-sided cooler with rotomolded construction that keeps ice for up to 3 days. Weighs 12 lb (5.4 kg).",
+    "price_usd": 59.0,
+    "average_rating": 4.3,
+    "num_reviews": 1500,
+    "review_snippets": [
+      "Very tough and bear-resistant looking",
+      "Ice was gone in a day and a half in a hot car",
+      "Heavy when full"
+    ],
+    "attributes": {
+      "product_type": "hard cooler",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 5443.1,
+        "raw": "12 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "rotomolded"
+      ],
+      "intended_use": [
+        "cooling"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "capacity_quart": 30.0,
+        "ice_retention_days": 3.0,
+        "weight_lb": 12.0,
+        "weight_kg": 5.4
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Very tough and bear-resistant looking",
+        "source": "rules"
+      },
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Heavy when full",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "c8b4c1b976b3",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P087",
+    "category": "toys",
+    "brand": "BrickBuilders",
+    "title": "BrickBuilders 500-Piece Creative Set",
+    "description": "500-piece building brick set with a storage tub and idea booklet. Recommended for ages 6+.",
+    "price_usd": 29.99,
+    "average_rating": 4.7,
+    "num_reviews": 3900,
+    "review_snippets": [
+      "Hours of creative play",
+      "Bricks fit well with other sets",
+      "A few pieces were missing"
+    ],
+    "attributes": {
+      "product_type": "building brick set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids",
+        "building"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "piece_count": 500.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "30a5d4aa3ec6",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P088",
+    "category": "toys",
+    "brand": "PlushPals",
+    "title": "PlushPals Cuddle Bear 16 in",
+    "description": "Soft 16-inch plush bear with embroidered eyes. Machine washable. Suitable from birth.",
+    "price_usd": 18.0,
+    "average_rating": 4.6,
+    "num_reviews": 2700,
+    "review_snippets": [
+      "Super soft and my baby loves it",
+      "Washes without losing shape",
+      "Slightly smaller than expected"
+    ],
+    "attributes": {
+      "product_type": "plush bear",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "plush"
+      ],
+      "intended_use": [
+        "kids",
+        "cuddling"
+      ],
+      "features": [
+        "machine_washable"
+      ],
+      "lacks": [],
+      "specs": {
+        "size_in": 16.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Washes without losing shape",
+        "source": "llm"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "4dffbf1fa40b",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P089",
+    "category": "toys",
+    "brand": "PuzzleQuest",
+    "title": "PuzzleQuest 1000-Piece Landscape Puzzle",
+    "description": "1000-piece jigsaw puzzle of a mountain landscape on thick recycled board. Finished size 27 x 20 in.",
+    "price_usd": 16.99,
+    "average_rating": 4.5,
+    "num_reviews": 1800,
+    "review_snippets": [
+      "Pieces are thick and fit snugly",
+      "Fun family project",
+      "Image is a bit dark"
+    ],
+    "attributes": {
+      "product_type": "jigsaw puzzle",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "thick recycled board"
+      ],
+      "intended_use": [
+        "puzzle"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "piece_count": 1000.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "4b47e5b69790",
+      "notes": [
+        "dropped non-numeric spec 'finished_size_in'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P090",
+    "category": "toys",
+    "brand": "RoboTinker",
+    "title": "RoboTinker STEM Robot Building Kit",
+    "description": "STEM kit that builds six different robots, no soldering required. Recommended for ages 8+. Needs 4 AA batteries (not included).",
+    "price_usd": 44.99,
+    "average_rating": 4.0,
+    "num_reviews": 850,
+    "review_snippets": [
+      "Instructions were unclear and my kid needed help",
+      "Kids loved it once built",
+      "Missing screws in one kit"
+    ],
+    "attributes": {
+      "product_type": "robot building kit",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids",
+        "stem"
+      ],
+      "features": [
+        "no_soldering_required"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_count": 4.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "4abd4a29d1c8",
+      "notes": [
+        "dropped spec 'robot_count=6' (number not found in description)",
+        "dropped non-numeric spec 'battery_type'",
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P091",
+    "category": "toys",
+    "brand": "SplashZone",
+    "title": "SplashZone Water Blaster",
+    "description": "Large-capacity water blaster with a 1L tank and 30-foot range. For ages 5+.",
+    "price_usd": 14.0,
+    "average_rating": 4.2,
+    "num_reviews": 2900,
+    "review_snippets": [
+      "Perfect for summer backyard fun",
+      "Trigger stiff at first",
+      "Leaks a little at the cap"
+    ],
+    "attributes": {
+      "product_type": "water blaster",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "tank_capacity_l": 1.0,
+        "range_ft": 30.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": true,
+        "scope": null,
+        "quote": "Leaks a little at the cap",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it let water in"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "9e1625fd4e2c",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P092",
+    "category": "toys",
+    "brand": "TinyTots",
+    "title": "TinyTots Wooden Stacking Blocks",
+    "description": "Set of 30 wooden stacking blocks painted with non-toxic water-based paint. Suitable for ages 1+.",
+    "price_usd": 23.0,
+    "average_rating": 4.7,
+    "num_reviews": 1600,
+    "review_snippets": [
+      "Sturdy and my toddler loves them",
+      "Smooth edges",
+      "Paint chipped slightly on one block"
+    ],
+    "attributes": {
+      "product_type": "wooden stacking blocks",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "wood"
+      ],
+      "intended_use": [
+        "kids"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "count": 30.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Sturdy and my toddler loves them",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": true,
+        "scope": null,
+        "quote": "Paint chipped slightly on one block",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "d08c1aa6488b",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P093",
+    "category": "toys",
+    "brand": "RC Racer",
+    "title": "RC Racer Stunt Car",
+    "description": "2.4GHz remote-control stunt car with 20 minutes of battery per charge, 360-degree flips and rechargeable battery. Recommended for ages 8+.",
+    "price_usd": 39.0,
+    "average_rating": 4.3,
+    "num_reviews": 2300,
+    "review_snippets": [
+      "Fast and survives crashes",
+      "Battery only lasts 15 minutes",
+      "Fun for the price"
+    ],
+    "attributes": {
+      "product_type": "rc racer stunt car",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids"
+      ],
+      "features": [
+        "remote_control",
+        "rechargeable_battery"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_minutes_per_charge": 20.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "battery",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Battery only lasts 15 minutes",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report the battery falling short"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "eb1e5ca42d8f",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P094",
+    "category": "toys",
+    "brand": "RC Racer",
+    "title": "RC Racer Stunt Car Pro",
+    "description": "2.4GHz remote-control stunt car with two rechargeable batteries for 40 minutes of play, all-terrain tires and speeds up to 20 mph. Recommended for ages 8+.",
+    "price_usd": 69.0,
+    "average_rating": 4.6,
+    "num_reviews": 1200,
+    "review_snippets": [
+      "Tires grip on grass and gravel",
+      "Two batteries doubled our playtime",
+      "Noticeably faster than the basic model"
+    ],
+    "attributes": {
+      "product_type": "rc racer stunt car pro",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids"
+      ],
+      "features": [
+        "remote_control",
+        "rechargeable_battery",
+        "all_terrain_tires"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_minutes_per_charge": 40.0,
+        "speed_mph": 20.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Tires grip on grass and gravel",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "3141281a32a5",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P095",
+    "category": "toys",
+    "brand": "GameNight",
+    "title": "GameNight Family Party Board Game",
+    "description": "Family party board game for 2 to 8 players. Recommended for ages 10+. Plays in about 30 minutes.",
+    "price_usd": 27.0,
+    "average_rating": 4.6,
+    "num_reviews": 2100,
+    "review_snippets": [
+      "Big hit at our family dinners",
+      "Easy rules",
+      "Could use more cards"
+    ],
+    "attributes": {
+      "product_type": "family party board game",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {
+        "players_min": 2.0,
+        "players_max": 8.0,
+        "playtime_minutes": 30.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "550398b1dda9",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P096",
+    "category": "toys",
+    "brand": "ArtBox",
+    "title": "ArtBox Kids Washable Painting Set",
+    "description": "Washable painting set with 12 colors, three brushes and a mixing tray. Recommended for ages 3+.",
+    "price_usd": 19.0,
+    "average_rating": 4.4,
+    "num_reviews": 1700,
+    "review_snippets": [
+      "Colors are vibrant and washed out of clothes",
+      "Brushes are cheap",
+      "Good starter set"
+    ],
+    "attributes": {
+      "product_type": "washable painting set",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "kids",
+        "painting"
+      ],
+      "features": [
+        "washable"
+      ],
+      "lacks": [],
+      "specs": {
+        "colors": 12.0,
+        "brushes": 3.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "701fe8e09d62",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P097",
+    "category": "toys",
+    "brand": "Starlight",
+    "title": "Starlight Dream Projector Night Light",
+    "description": "Night light that projects stars and moons onto the ceiling, with a timer and three colors. USB powered.",
+    "price_usd": 21.0,
+    "average_rating": 4.3,
+    "num_reviews": 3200,
+    "review_snippets": [
+      "My kids love falling asleep to it",
+      "Projection is dim in a bright room",
+      "Timer is handy"
+    ],
+    "attributes": {
+      "product_type": "night light",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [],
+      "features": [
+        "timer",
+        "usb_powered"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "42df148b8d80",
+      "notes": [
+        "dropped spec 'colors=3' (number not found in description)",
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'kids'",
+        "dropped unsupported intended_use 'decor'"
+      ]
+    }
+  },
+  {
+    "product_id": "P098",
+    "category": "toys",
+    "brand": "Little Chef",
+    "title": "Little Chef Wooden Play Kitchen",
+    "description": "Wooden play kitchen with a stove, sink, oven and storage shelves. Assembly required. Weighs 22 lb (10 kg). Recommended for ages 3+.",
+    "price_usd": 59.0,
+    "average_rating": 4.4,
+    "num_reviews": 1300,
+    "review_snippets": [
+      "Took two hours to assemble but sturdy",
+      "Kids play with it daily",
+      "Bulky for small rooms"
+    ],
+    "attributes": {
+      "product_type": "wooden play kitchen",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 9979.0,
+        "raw": "22 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "wood"
+      ],
+      "intended_use": [
+        "kids",
+        "play"
+      ],
+      "features": [
+        "assembly_required"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_lb": 22.0,
+        "weight_kg": 10.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Took two hours to assemble but sturdy",
+        "source": "rules"
+      },
+      {
+        "aspect": "weight",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Bulky for small rooms",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers find it heavy"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "9b03b397b39c",
+      "notes": [
+        "review evidence refined by LLM"
+      ]
+    }
+  },
+  {
+    "product_id": "P099",
+    "category": "pets",
+    "brand": "PawPal",
+    "title": "PawPal Orthopedic Dog Bed Medium",
+    "description": "Orthopedic memory-foam dog bed with a removable washable cover and non-slip base. Fits dogs up to 50 lb.",
+    "price_usd": 49.0,
+    "average_rating": 4.6,
+    "num_reviews": 2700,
+    "review_snippets": [
+      "My senior dog sleeps better",
+      "Cover washes well",
+      "Runs a little small"
+    ],
+    "attributes": {
+      "product_type": "orthopedic dog bed",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "memory foam",
+        "memory-foam"
+      ],
+      "intended_use": [
+        "dog"
+      ],
+      "features": [
+        "removable_washable_cover",
+        "non_slip_base"
+      ],
+      "lacks": [],
+      "specs": {
+        "max_weight_lb": 50.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "ebb972b9970b",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'pets'"
+      ]
+    }
+  },
+  {
+    "product_id": "P100",
+    "category": "office",
+    "brand": "DeskMate",
+    "title": "DeskMate Adjustable Laptop Stand",
+    "description": "Aluminum laptop stand with six height settings that folds flat. Fits laptops from 10 to 16 inches. Weighs 1.0 lb (450 g).",
+    "price_usd": 29.99,
+    "average_rating": 4.5,
+    "num_reviews": 4300,
+    "review_snippets": [
+      "Sturdy and fixed my neck strain",
+      "Folds flat for travel",
+      "Rubber pads fell off after a while"
+    ],
+    "attributes": {
+      "product_type": "laptop stand",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 453.6,
+        "raw": "1.0 lb",
+        "basis": "item"
+      },
+      "materials": [
+        "aluminum"
+      ],
+      "intended_use": [
+        "laptop"
+      ],
+      "features": [
+        "six_height_settings",
+        "folds_flat"
+      ],
+      "lacks": [],
+      "specs": {
+        "laptop_size_inch_min": 10.0,
+        "laptop_size_inch_max": 16.0,
+        "weight_lb": 1.0,
+        "weight_g": 450.0
+      }
+    },
+    "review_evidence": [
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Sturdy and fixed my neck strain",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Rubber pads fell off after a while",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it wore out or broke"
+    ],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "d6da0c881f3d",
+      "notes": [
+        "review evidence refined by LLM",
+        "dropped unsupported intended_use 'office'"
+      ]
+    }
+  }
+]

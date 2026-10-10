@@ -1,0 +1,195 @@
+[
+  {
+    "product_id": "P003",
+    "title": "UrbanStep Canvas Casual Sneaker",
+    "review_snippets": [
+      "Comfortable and looks great with jeans",
+      "The fabric got soaked in light rain and took a day to dry",
+      "Canvas soaked through in a drizzle, would not wear these in wet weather"
+    ],
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "light",
+        "quote": "The fabric got soaked in light rain and took a day to dry",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "light",
+        "quote": "Canvas soaked through in a drizzle, would not wear these in wet weather",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "2 of 3 reviewers report it let water in"
+    ]
+  },
+  {
+    "product_id": "P006",
+    "title": "Tempo AquaRun Waterproof Lightweight Runner",
+    "review_snippets": [
+      "Leaked through the seams on the first stormy run",
+      "The waterproof claim is wrong, my socks were soaked after one puddle",
+      "Fine in a light drizzle and a comfortable fit"
+    ],
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "heavy",
+        "quote": "Leaked through the seams on the first stormy run",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "The waterproof claim is wrong, my socks were soaked after one puddle",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": "light",
+        "quote": "Fine in a light drizzle and a comfortable fit",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "2 of 3 reviewers report it let water in"
+    ]
+  },
+  {
+    "product_id": "P007",
+    "title": "Granite Peak Waterproof Hiking Boot",
+    "review_snippets": [
+      "Dry feet through three days of rain in the Cascades",
+      "Great ankle support and very durable",
+      "Started to leak at the toe after about six months",
+      "Excellent traction on muddy trails"
+    ],
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Dry feet through three days of rain in the Cascades",
+        "source": "rules"
+      },
+      {
+        "aspect": "durability",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Great ankle support and very durable",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": null,
+        "quote": "Started to leak at the toe after about six months",
+        "source": "rules"
+      },
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Excellent traction on muddy trails",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 4 reviewers report it let water in"
+    ]
+  },
+  {
+    "product_id": "P024",
+    "title": "AeroPods Sport Ear-Hook Wireless Earbuds",
+    "review_snippets": [
+      "Survived sweaty runs and a rainy 10K without any problem",
+      "Stay put during burpees",
+      "Sound is decent, the ear hooks take getting used to"
+    ],
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Survived sweaty runs and a rainy 10K without any problem",
+        "source": "rules"
+      },
+      {
+        "aspect": "grip",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "Stay put during burpees",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": []
+  },
+  {
+    "product_id": "P049",
+    "title": "ClearSkin Gentle Foaming Cleanser",
+    "review_snippets": [
+      "No scent at all and it works for my sensitive skin",
+      "Doesn't remove waterproof mascara",
+      "Did not irritate my skin"
+    ],
+    "review_evidence": [
+      {
+        "aspect": "fragrance",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": null,
+        "quote": "No scent at all and it works for my sensitive skin",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": []
+  },
+  {
+    "product_id": "P080",
+    "title": "RainShield Packable Rain Jacket",
+    "review_snippets": [
+      "Kept me dry in light rain and drizzle",
+      "Soaked through in a heavy downpour after about an hour",
+      "Packs down tiny"
+    ],
+    "review_evidence": [
+      {
+        "aspect": "water",
+        "polarity": "supports",
+        "hedged": false,
+        "scope": "light",
+        "quote": "Kept me dry in light rain and drizzle",
+        "source": "rules"
+      },
+      {
+        "aspect": "water",
+        "polarity": "negative",
+        "hedged": false,
+        "scope": "heavy",
+        "quote": "Soaked through in a heavy downpour after about an hour",
+        "source": "rules"
+      }
+    ],
+    "review_warnings": [
+      "1 of 3 reviewers report it let water in"
+    ]
+  }
+]

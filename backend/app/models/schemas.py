@@ -113,3 +113,98 @@ class StructuredQuery(BaseModel):
     recipient: Optional[str] = None
     parser: Literal["rules", "rules+llm"] = "rules"
     notes: list[str] = Field(default_factory=list, description="What the guards dropped, fallbacks used")
+
+
+
+
+
+
+# ======================================================================
+# Phase 10: API request / response models  (what Swagger documents and the UI consumes)
+# ======================================================================
+from pydantic import ConfigDict, field_validator  # noqa: E402
+
+
+class ChatMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str
+
+
+class ChatRequest(BaseModel):
+    message: str = Field(..., min_length=1, max_length=1000, description="The shopper's free-text message")
+    history: list[ChatMessage] = Field(
+        default_factory=list,
+        description="Earlier turns of this conversation, oldest first. Accepted now; multi-turn memory is applied "
+                    "in a later phase.")
+
+    model_config = ConfigDict(json_schema_extra={"examples": [
+        {"message": "I need a lightweight waterproof running shoe, ideally under $80", "history": []}]})
+
+    @field_validator("message")
+    @classmethod
+    def _not_blank(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("message must not be blank")
+        return v
+
+
+class ProductCard(BaseModel):
+    product_id: str
+    title: str
+    brand: str
+    category: str
+    price_usd: Optional[float] = None
+    average_rating: Optional[float] = None
+    num_reviews: Optional[int] = None
+    role: Literal["primary", "secondary", "caution", "upsell"] = Field(
+        ..., description="primary = top pick; secondary = alternative; caution = matches the words but review "
+                         "evidence argues against it; upsell = optional step-up")
+    match_label: Literal["strong", "partial", "conflict", "poor"]
+    score: float
+    reasons: list[str] = Field(default_factory=list, description="Why it fits (plain language)")
+    warnings: list[str] = Field(default_factory=list, description="Tradeoffs and concerns (plain language)")
+    price_delta: Optional[float] = Field(None, description="Upsell only: extra cost over the primary pick")
+    benefits: list[str] = Field(default_factory=list, description="Upsell only: concrete, data-backed benefits")
+    style: Optional[Literal["suggest", "mention"]] = Field(None, description="Upsell only: how prominently to present it")
+
+
+class ClarificationInfo(BaseModel):
+    question: str
+    options: list[str] = Field(default_factory=list, description="Real catalog product types / categories")
+
+
+class RankingEntry(BaseModel):
+    product_id: str
+    title: str
+    price_usd: Optional[float] = None
+    rank: int
+    score: float
+    label: str
+    components: dict[str, float] = Field(default_factory=dict)
+
+
+class ChatDetails(BaseModel):
+    """Everything behind the answer, for the 'why' toggle, debugging and the walkthrough."""
+    parsed_query: StructuredQuery
+    specificity: float
+    gate_reasons: list[str] = Field(default_factory=list)
+    match_reasons: list[str] = Field(default_factory=list)
+    mode: Optional[str] = Field(None, description="confident | tradeoff | closest_available")
+    ranking: list[RankingEntry] = Field(default_factory=list)
+    upsell_skipped_reason: Optional[str] = None
+    upsell_rejected: dict[str, str] = Field(default_factory=dict)
+    wording: Literal["llm", "template"] = "template"
+    guard_failures: list[str] = Field(default_factory=list, description="Why LLM wording was rejected, if it was")
+    data_source: str = ""
+    history_turns: int = 0
+    memory_applied: bool = False
+
+
+class ChatResponse(BaseModel):
+    type: Literal["recommendation", "clarification", "no_match"]
+    assistant_message: str
+    clarification: Optional[ClarificationInfo] = None
+    recommendations: list[ProductCard] = Field(default_factory=list)
+    upsell: Optional[ProductCard] = None
+    details: ChatDetails

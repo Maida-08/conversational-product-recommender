@@ -1,0 +1,273 @@
+{
+  "warning": "SYNTHETIC development data. Not the original assignment dataset. The recommendation pipeline must never read this file; it is for tests and docs only.",
+  "traits": {
+    "P001": [
+      "strong_match",
+      "budget_conflict",
+      "only_fully_waterproof_running_shoe",
+      "scenario_A_top_pick"
+    ],
+    "P002": [
+      "partial_match",
+      "missing_attribute:waterproof",
+      "review_negative_evidence:water",
+      "scenario_A_secondary"
+    ],
+    "P003": [
+      "review_only_negative:rain",
+      "scenario_C_trap",
+      "multiple_agreeing_reviews"
+    ],
+    "P004": [
+      "good_alternative_for_rain",
+      "scenario_C_recommended_alternative"
+    ],
+    "P005": [
+      "explicit_not_waterproof",
+      "over_typical_budget"
+    ],
+    "P006": [
+      "contradiction:desc_waterproof_vs_reviews_leak",
+      "two_agreeing_negative_reviews",
+      "one_hedged_positive"
+    ],
+    "P007": [
+      "lone_contradicting_review_should_not_overturn_description"
+    ],
+    "P008": [
+      "review_only_negative:rain_mild"
+    ],
+    "P010": [
+      "pricier_decoy_no_relevant_benefit_for_budget_shopper"
+    ],
+    "P011": [
+      "missing_attribute:weight",
+      "missing_attribute:waterproof",
+      "weak_review_signal:lightweight"
+    ],
+    "P014": [
+      "scenario_D_primary",
+      "cheap_basic"
+    ],
+    "P015": [
+      "scenario_D_valid_upsell",
+      "upsell_benefit:ANC+battery"
+    ],
+    "P016": [
+      "different_form_factor_not_a_natural_upsell_for_earbuds"
+    ],
+    "P017": [
+      "cheap_but_low_quality_decoy",
+      "rating_below_primary"
+    ],
+    "P018": [
+      "upsell_family:power_bank_basic"
+    ],
+    "P019": [
+      "upsell_family:power_bank_pro",
+      "upsell_benefit:laptop_charging+capacity"
+    ],
+    "P022": [
+      "upsell_family:tracker_basic",
+      "review_contradicts_spec:battery_days"
+    ],
+    "P023": [
+      "upsell_family:tracker_gps",
+      "upsell_benefit:GPS"
+    ],
+    "P024": [
+      "review_only_positive:sweat_and_rain",
+      "description_silent_on_water_resistance"
+    ],
+    "P025": [
+      "explicit_waterproof_IPX7",
+      "minor_review_contradiction:battery"
+    ],
+    "P026": [
+      "not_wireless_should_not_match_wireless_queries"
+    ],
+    "P027": [
+      "gift_candidate",
+      "cozy"
+    ],
+    "P028": [
+      "cozy_budget_alternative"
+    ],
+    "P033": [
+      "upsell_family:purifier_compact"
+    ],
+    "P034": [
+      "upsell_family:purifier_large",
+      "upsell_benefit:room_coverage"
+    ],
+    "P037": [
+      "contradiction:battery_minutes_vs_reviews",
+      "two_agreeing_negative_reviews"
+    ],
+    "P038": [
+      "gift_candidate",
+      "cozy"
+    ],
+    "P042": [
+      "gift_candidate:mom"
+    ],
+    "P043": [
+      "lone_negative_review:oxidation"
+    ],
+    "P045": [
+      "upsell_family:dryer_standard",
+      "lightweight_stated"
+    ],
+    "P046": [
+      "upsell_family:dryer_pro",
+      "upsell_benefit:quieter+diffuser"
+    ],
+    "P049": [
+      "review_only_positive:fragrance_free",
+      "description_silent_on_fragrance"
+    ],
+    "P050": [
+      "gift_candidate:mom"
+    ],
+    "P051": [
+      "review_only_negative:slippery",
+      "upsell_family:yoga_mat_basic"
+    ],
+    "P052": [
+      "upsell_family:yoga_mat_pro",
+      "upsell_benefit:non_slip"
+    ],
+    "P055": [
+      "contradiction:anti_fog_claim_vs_review"
+    ],
+    "P059": [
+      "lone_negative_review:leak"
+    ],
+    "P060": [
+      "review_only_positive:rain_dry"
+    ],
+    "P063": [
+      "upsell_family:kettle_basic"
+    ],
+    "P064": [
+      "upsell_family:kettle_variable_temp",
+      "upsell_benefit:temperature_control"
+    ],
+    "P065": [
+      "upsell_family:blender_personal"
+    ],
+    "P066": [
+      "upsell_family:blender_power",
+      "upsell_benefit:crushes_ice"
+    ],
+    "P068": [
+      "contradiction:durable_claim_vs_reviews_peeling",
+      "two_agreeing_negative_reviews"
+    ],
+    "P071": [
+      "upsell_family:air_fryer_4qt"
+    ],
+    "P072": [
+      "upsell_family:air_fryer_8qt_dual",
+      "upsell_benefit:two_baskets"
+    ],
+    "P073": [
+      "gift_candidate:mom"
+    ],
+    "P075": [
+      "waterproof_stated:rain_fly"
+    ],
+    "P076": [
+      "upsell_family:pack_40L",
+      "budget_conflict_for_cheap_backpack_queries"
+    ],
+    "P077": [
+      "upsell_family:pack_55L",
+      "upsell_benefit:frame+capacity"
+    ],
+    "P079": [
+      "contradiction:temperature_rating_vs_review"
+    ],
+    "P080": [
+      "hedged_contradiction:waterproof_holds_in_light_rain_only"
+    ],
+    "P085": [
+      "review_only_positive:waterproof",
+      "description_silent_on_waterproof"
+    ],
+    "P086": [
+      "contradiction:ice_retention_vs_review"
+    ],
+    "P093": [
+      "upsell_family:rc_car_basic"
+    ],
+    "P094": [
+      "upsell_family:rc_car_pro",
+      "upsell_benefit:2_batteries+faster"
+    ],
+    "P099": [
+      "off_category_one_off:pets"
+    ],
+    "P100": [
+      "off_category_one_off:office",
+      "no_standing_desk_in_catalog"
+    ]
+  },
+  "query_playbook": [
+    {
+      "id": "Q1_specific",
+      "query": "I need a lightweight waterproof running shoe, ideally under $80.",
+      "expect": "P001 top pick (over budget, flagged); P002 secondary (not waterproof per reviews); P006 flagged as review contradiction"
+    },
+    {
+      "id": "Q2_budget",
+      "query": "Cheap running shoes under $45.",
+      "expect": "P011 top; unknown weight/waterproof surfaced as unknown, not false"
+    },
+    {
+      "id": "Q3_ambiguous",
+      "query": "Something nice for my mom.",
+      "expect": "clarification, no ranked list; options drawn from catalog categories"
+    },
+    {
+      "id": "Q4_review_only",
+      "query": "I want a casual sneaker that won't fall apart in light rain.",
+      "expect": "P003 flagged/down-ranked due to reviews; P004 offered as alternative"
+    },
+    {
+      "id": "Q5_upsell",
+      "query": "Looking for cheap wireless earbuds, just need something basic.",
+      "expect": "P014 primary; P015 as brief optional upsell (ANC + 30h); P017 not preferred (low rating); P026 excluded (wired)"
+    },
+    {
+      "id": "Q6_no_match",
+      "query": "I need a standing desk for my home office.",
+      "expect": "no strong match; honest message; optionally P100 as loosely related, labeled poor"
+    },
+    {
+      "id": "Q7_budget_conflict",
+      "query": "A 40L hiking backpack under $40.",
+      "expect": "P076 over budget, flagged; no silent hiding"
+    },
+    {
+      "id": "Q8_review_positive",
+      "query": "Wireless earbuds for running that can handle sweat and rain.",
+      "expect": "P024 supported by reviews only (uncertain, communicated); P014/P015 IPX4 stated"
+    },
+    {
+      "id": "Q9_contradiction",
+      "query": "Waterproof running shoe under $80 that's really lightweight.",
+      "expect": "P006 shown with contradiction warning rather than confident match"
+    },
+    {
+      "id": "Q10_no_upsell",
+      "query": "I want the best air purifier for a large open-plan living room.",
+      "expect": "P034 primary; no upsell because primary already top of family"
+    },
+    {
+      "id": "Q11_lone_review",
+      "query": "Waterproof hiking boot.",
+      "expect": "P007 still recommended; lone leak review surfaced softly, not treated as truth"
+    }
+  ]
+}

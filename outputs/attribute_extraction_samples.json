@@ -1,0 +1,448 @@
+[
+  {
+    "product_id": "P001",
+    "category": "footwear",
+    "brand": "Aquaridge",
+    "title": "Aquaridge StormShield Waterproof Trail Running Shoe",
+    "description": "Fully waterproof trail runner with a sealed-seam membrane and gusseted tongue. Aggressive 5mm lugs for wet trails. Weighs 10.2 oz (289 g) per shoe in men's size 9. Synthetic mesh upper with TPU overlays.",
+    "price_usd": 89.5,
+    "average_rating": 4.5,
+    "num_reviews": 812,
+    "review_snippets": [
+      "Feet stayed bone dry through a two-hour downpour",
+      "Grippy on wet rock, but needed a week to break in",
+      "Pricey for a running shoe, though it is the only one that kept me dry"
+    ],
+    "attributes": {
+      "product_type": "trail running shoe",
+      "water_resistance": {
+        "status": true,
+        "level": "waterproof",
+        "rating": null,
+        "evidence": "Fully waterproof trail runner with a sealed-seam membrane and gusseted tongue.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 289.2,
+        "raw": "10.2 oz",
+        "basis": "per_shoe"
+      },
+      "materials": [
+        "mesh",
+        "TPU",
+        "synthetic",
+        "synthetic mesh"
+      ],
+      "intended_use": [
+        "running",
+        "trail",
+        "trail running"
+      ],
+      "features": [
+        "sealed_seam_membrane",
+        "gusseted_tongue",
+        "aggressive_5mm_lugs"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_oz": 10.2,
+        "weight_g": 289.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "6490dab16fce",
+      "notes": []
+    }
+  },
+  {
+    "product_id": "P002",
+    "category": "footwear",
+    "brand": "TrailFox",
+    "title": "TrailFox Featherlite Running Shoe",
+    "description": "Ultralight road-to-trail runner at just 7.8 oz (221 g). Breathable engineered mesh upper, 8mm drop and a responsive foam midsole. Built for tempo runs and daily miles.",
+    "price_usd": 64.99,
+    "average_rating": 4.4,
+    "num_reviews": 1543,
+    "review_snippets": [
+      "Barely feel them on my feet, super light",
+      "Mesh soaked through in the first rain, wet socks the whole run",
+      "Great daily trainer for dry weather"
+    ],
+    "attributes": {
+      "product_type": "road-to-trail running shoe",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": 221.1,
+        "raw": "at just 7.8 oz",
+        "basis": "item"
+      },
+      "materials": [
+        "mesh",
+        "foam",
+        "engineered mesh"
+      ],
+      "intended_use": [
+        "running",
+        "trail",
+        "everyday",
+        "tempo runs",
+        "daily miles"
+      ],
+      "features": [
+        "ultralight",
+        "8mm_drop",
+        "responsive_foam_midsole"
+      ],
+      "lacks": [],
+      "specs": {
+        "weight_oz": 7.8,
+        "weight_g": 221.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "d9537175694e",
+      "notes": []
+    }
+  },
+  {
+    "product_id": "P003",
+    "category": "footwear",
+    "brand": "UrbanStep",
+    "title": "UrbanStep Canvas Casual Sneaker",
+    "description": "Classic low-top sneaker in cotton canvas with a vulcanized rubber sole and cushioned insole. Available in six colors. A clean everyday look for casual wear.",
+    "price_usd": 54.0,
+    "average_rating": 4.2,
+    "num_reviews": 966,
+    "review_snippets": [
+      "Comfortable and looks great with jeans",
+      "The fabric got soaked in light rain and took a day to dry",
+      "Canvas soaked through in a drizzle, would not wear these in wet weather"
+    ],
+    "attributes": {
+      "product_type": "casual sneaker",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "canvas",
+        "cotton",
+        "rubber",
+        "cotton canvas",
+        "vulcanized rubber"
+      ],
+      "intended_use": [
+        "casual",
+        "everyday",
+        "casual wear"
+      ],
+      "features": [
+        "low_top",
+        "cushioned_insole"
+      ],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "b8b477697ef6",
+      "notes": []
+    }
+  },
+  {
+    "product_id": "P005",
+    "category": "footwear",
+    "brand": "Cloudstride",
+    "title": "Cloudstride Max Cushion Road Running Shoe",
+    "description": "Maximum-cushion road running shoe with a knit upper. Not waterproof; designed for breathability in warm weather. 9.6 oz (272 g) per shoe. Rocker geometry for long runs.",
+    "price_usd": 129.0,
+    "average_rating": 4.7,
+    "num_reviews": 2210,
+    "review_snippets": [
+      "Plush ride for marathon training",
+      "Knit upper breathes well and dries fast",
+      "Excellent cushioning but pricey"
+    ],
+    "attributes": {
+      "product_type": "road running shoe",
+      "water_resistance": {
+        "status": false,
+        "level": null,
+        "rating": null,
+        "evidence": "Not waterproof; designed for breathability in warm weather.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": 272.2,
+        "raw": "9.6 oz (272 g) per shoe",
+        "basis": "per_shoe"
+      },
+      "materials": [
+        "knit",
+        "knit upper"
+      ],
+      "intended_use": [
+        "running",
+        "long runs"
+      ],
+      "features": [
+        "maximum_cushion",
+        "rocker_geometry"
+      ],
+      "lacks": [
+        "waterproof"
+      ],
+      "specs": {
+        "weight_oz": 9.6,
+        "weight_g": 272.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "1c3f3a5cbf02",
+      "notes": []
+    }
+  },
+  {
+    "product_id": "P011",
+    "category": "footwear",
+    "brand": "PaceLine",
+    "title": "PaceLine Basic Road Running Shoe",
+    "description": "No-frills road running shoe with a mesh upper, cushioned EVA midsole and durable rubber outsole. A dependable entry-level trainer for casual joggers.",
+    "price_usd": 39.99,
+    "average_rating": 4.0,
+    "num_reviews": 3200,
+    "review_snippets": [
+      "Great value for casual jogging",
+      "Comfortable right out of the box",
+      "Feels light enough for 5K runs"
+    ],
+    "attributes": {
+      "product_type": "road running shoe",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [
+        "mesh",
+        "rubber",
+        "EVA"
+      ],
+      "intended_use": [
+        "running",
+        "casual",
+        "casual joggers"
+      ],
+      "features": [],
+      "lacks": [],
+      "specs": {}
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "4e5fdc793be0",
+      "notes": []
+    }
+  },
+  {
+    "product_id": "P014",
+    "category": "electronics",
+    "brand": "SonicPulse",
+    "title": "SonicPulse Wireless Earbuds Lite",
+    "description": "Basic true-wireless earbuds with Bluetooth 5.3, touch controls and a compact charging case. 6 hours per charge, 18 hours with the case. No active noise cancellation. IPX4 splash resistance.",
+    "price_usd": 24.99,
+    "average_rating": 4.1,
+    "num_reviews": 5400,
+    "review_snippets": [
+      "Solid sound for the price",
+      "Perfect basic earbuds, no frills",
+      "Battery lasts about 5 hours, fine for commuting"
+    ],
+    "attributes": {
+      "product_type": "wireless earbuds",
+      "water_resistance": {
+        "status": true,
+        "level": "splash_resistant",
+        "rating": "IPX4",
+        "evidence": "IPX4 splash resistance.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "basic"
+      ],
+      "features": [
+        "wireless",
+        "bluetooth_5_3",
+        "touch_controls",
+        "compact_charging_case",
+        "ipx4_splash_resistance"
+      ],
+      "lacks": [
+        "active_noise_cancellation"
+      ],
+      "specs": {
+        "battery_hours_per_charge": 6.0,
+        "battery_hours_with_case": 18.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "900132c4aa7d",
+      "notes": []
+    }
+  },
+  {
+    "product_id": "P015",
+    "category": "electronics",
+    "brand": "SonicPulse",
+    "title": "SonicPulse Wireless Earbuds Pro",
+    "description": "Premium true-wireless earbuds with hybrid active noise cancellation, transparency mode and Bluetooth 5.3. Up to 8 hours per charge and 30 hours with the wireless charging case. IPX4 rated.",
+    "price_usd": 59.99,
+    "average_rating": 4.6,
+    "num_reviews": 3100,
+    "review_snippets": [
+      "The ANC blocks out the train nicely",
+      "Battery easily lasts a work week",
+      "Best sound at this price and the mic is great for calls"
+    ],
+    "attributes": {
+      "product_type": "wireless earbuds",
+      "water_resistance": {
+        "status": true,
+        "level": "splash_resistant",
+        "rating": "IPX4",
+        "evidence": "IPX4 rated.",
+        "source": "rules"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "premium"
+      ],
+      "features": [
+        "active_noise_cancellation",
+        "wireless",
+        "bluetooth_5_3",
+        "hybrid_active_noise_cancellation",
+        "transparency_mode",
+        "ipx4_rated"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 8.0,
+        "battery_hours_with_case": 30.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "2dbc949d9f07",
+      "notes": []
+    }
+  },
+  {
+    "product_id": "P024",
+    "category": "electronics",
+    "brand": "AeroPods",
+    "title": "AeroPods Sport Ear-Hook Wireless Earbuds",
+    "description": "Secure ear-hook wireless earbuds made for workouts. Bluetooth 5.2, 9 hours per charge, and three tip sizes in the box.",
+    "price_usd": 44.99,
+    "average_rating": 4.4,
+    "num_reviews": 1750,
+    "review_snippets": [
+      "Survived sweaty runs and a rainy 10K without any problem",
+      "Stay put during burpees",
+      "Sound is decent, the ear hooks take getting used to"
+    ],
+    "attributes": {
+      "product_type": "wireless earbuds",
+      "water_resistance": {
+        "status": null,
+        "level": null,
+        "rating": null,
+        "evidence": null,
+        "source": "none"
+      },
+      "weight": {
+        "grams": null,
+        "raw": null,
+        "basis": null
+      },
+      "materials": [],
+      "intended_use": [
+        "workouts"
+      ],
+      "features": [
+        "wireless",
+        "bluetooth_5_2",
+        "ear_hook",
+        "three_tip_sizes"
+      ],
+      "lacks": [],
+      "specs": {
+        "battery_hours_per_charge": 9.0
+      }
+    },
+    "review_evidence": [],
+    "review_warnings": [],
+    "extraction": {
+      "method": "rules+llm",
+      "model": "openai/gpt-oss-20b",
+      "source_hash": "bc61d9dbe3b1",
+      "notes": []
+    }
+  }
+]
