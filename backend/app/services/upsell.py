@@ -217,15 +217,42 @@ def suggest_upsell(query: StructuredQuery, rec: Recommendation, ranked: list[Ran
         rejected=rejected)
 
 
-def plan_recommendation(query: StructuredQuery, ranked: list[RankedProduct]
-                        ) -> tuple[Optional[Recommendation], UpsellDecision]:
-    """Recommendation + upsell decision, with the upsell product removed from the secondary list."""
-    rec = recommend(ranked)
+def plan_recommendation(
+    query: StructuredQuery,
+    ranked: list[RankedProduct],
+) -> tuple[Optional[Recommendation], UpsellDecision]:
+    """Build a recommendation, enforcing explicit hard budget limits."""
+
+    candidates = ranked
+    budget = query.budget
+
+    # A firm maximum is a hard constraint, not just a ranking preference.
+    if budget.firmness == "firm" and budget.max is not None:
+        candidates = [
+            item for item in ranked
+            if item.product.price_usd <= budget.max
+        ]
+
+        if not candidates:
+            return None, UpsellDecision(
+                skipped_reason="no products within the firm budget"
+            )
+
+    rec = recommend(candidates)
+
     if rec is None:
-        return None, UpsellDecision(skipped_reason="nothing to recommend")
-    decision = suggest_upsell(query, rec, ranked)
+        return None, UpsellDecision(
+            skipped_reason="nothing suitable to recommend"
+        )
+
+    decision = suggest_upsell(query, rec, candidates)
+
     if decision.suggestion:
-        rec = recommend(ranked, exclude_ids={decision.suggestion.product.product.product_id})
+        rec = recommend(
+            candidates,
+            exclude_ids={decision.suggestion.product.product.product_id},
+        )
+
     return rec, decision
 
 

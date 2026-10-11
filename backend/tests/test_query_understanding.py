@@ -44,6 +44,15 @@ def test_ideally_softens_the_budget():
     assert qu.parse_budget("a running shoe, ideally under $80").firmness == "soft"
 
 
+@pytest.mark.parametrize("text", [
+    "I need wireless headphones under $50. Do not recommend anything above my budget.",
+    "I need headphones under $50. Don't recommend anything over my budget.",
+])
+def test_explicit_no_over_budget_instruction_is_firm(text):
+    budget = qu.parse_budget(text)
+    assert budget.max == 50
+    assert budget.firmness == "firm"
+
 # --------------------------------------------------- scenario A: specific query
 def test_scenario_a_specific_query():
     q = qu.rules_parse("I need a lightweight waterproof running shoe, ideally under $80.")

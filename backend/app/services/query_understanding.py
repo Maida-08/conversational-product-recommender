@@ -61,7 +61,14 @@ _BUDGET_FIRM = re.compile(
     r"\b(must|can'?t|cannot|no more than|not more than|at most|max(?:imum)?|strict|hard limit|"
     r"don'?t want to spend more|not over|nothing over|no higher than)\b", re.I)
 
-
+_STRICT_BUDGET_LANGUAGE = re.compile(
+    r"\b(?:do\s+not|don't|dont|never)\s+"
+    r"(?:recommend|suggest|show|include|offer)\b"
+    r".{0,100}\b(?:above|over|beyond|exceed(?:ing)?)\b"
+    r".{0,40}\b(?:my\s+)?budget\b"
+    r"|\b(?:nothing|anything)\s+(?:above|over|beyond)\s+(?:my\s+)?budget\b",
+    re.I,
+)
 def _to_float(s: str) -> float:
     return float(s.replace(",", ""))
 
@@ -116,18 +123,27 @@ def parse_budget(text: str) -> Budget:
                 b.max = _to_float(m.group("num") or m.group("num2"))
                 pos = m.start()
 
+    
     if pos is not None:
-        clause = _clause_text(text, pos)
-        if _SOFT_MARKERS.search(clause) or _BUDGET_APPROX.search(clause):
-            b.firmness = "soft"
-        elif _BUDGET_FIRM.search(clause):
+       clause = _clause_text(text, pos)
+       if _SOFT_MARKERS.search(clause) or _BUDGET_APPROX.search(clause):
+           b.firmness = "soft"
+       elif _BUDGET_FIRM.search(clause):
             b.firmness = "firm"
+
+# An explicit prohibition can be in a different sentence from the price.
+    if b.max is not None and _STRICT_BUDGET_LANGUAGE.search(text):
+       b.firmness = "firm"
+
     return b
 
 
 # ===================================================== PRODUCT TYPE / CATEGORY
 # Order matters: specific patterns first. This table is tuned to the development catalog;
 # on a real catalog it would be derived from catalog product types (see README limitations).
+
+("over-ear headphones", "electronics",
+ r"\bover[\s-]?ear\b.*\bheadphones?\b|\bheadphones?\b.*\bover[\s-]?ear\b"),
 _PRODUCT_TYPES: list[tuple[str, str, str]] = [
     # footwear
     ("trail running shoe", "footwear", r"trail[\s-]running\s+shoes?|trail\s+runners?"),
@@ -141,7 +157,8 @@ _PRODUCT_TYPES: list[tuple[str, str, str]] = [
     ("shoe", "footwear", r"\bshoes?\b|\bfootwear\b"),
     # electronics
     ("earbuds", "electronics", r"\bear\s?buds?\b|\bearphones?\b|\bairpods?\b|in[\s-]ear"),
-    ("headphones", "electronics", r"\bheadphones?\b|\bheadset\b"),
+    ("over-ear headphones", "electronics",
+    r"\bover[\s-]?ear\b.*\bheadphones?\b|\bheadphones?\b.*\bover[\s-]?ear\b"),
     ("power bank", "electronics", r"power\s?banks?|portable\s+charger|battery\s+pack"),
     ("speaker", "electronics", r"\bspeakers?\b"),
     ("fitness tracker", "electronics", r"fitness\s+(?:tracker|band)|\bsmart\s?watch\b|activity\s+tracker"),
