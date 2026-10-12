@@ -100,6 +100,18 @@ def test_named_product_missing_from_the_catalog_is_an_honest_no_match(catalog):
 def test_without_an_llm_an_unknown_product_degrades_to_a_question(engine):
     assert engine.respond("I need a standing desk for my home office").type == "clarification"
 
+def test_strict_constraints_no_match_does_not_claim_product_type_is_missing(engine):
+    r = engine.respond(
+        "I need a waterproof running shoe, no more than $30"
+    )
+
+    assert r.type == "no_match"
+    assert r.recommendations == []
+    assert r.upsell is None
+    assert "meets all your requirements" in r.assistant_message.lower()
+    assert "don't have a running shoe in the catalog" not in r.assistant_message.lower()
+
+
 
 # ------------------------------------------------------------------ LLM wording path
 GOOD_D = ("I'd go with the SonicPulse Wireless Earbuds Lite ($24.99). It is wireless. If you ever want active noise "

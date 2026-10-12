@@ -308,8 +308,9 @@ class Engine:
         ranked = self._filter_strict_budget(q, ranked)
 
         if not ranked:
-            out = self._write(build_no_match_facts(q, []))
-
+            out = self._write(
+                build_no_match_facts(q, [], reason="constraints")
+            )
             return ChatResponse(
                 type="no_match",
                 assistant_message=out.text,

@@ -243,9 +243,18 @@ def build_clarification_facts(query: StructuredQuery, gate: GateDecision) -> dic
             "use": query.intended_use[0] if query.intended_use else None}
 
 
-def build_no_match_facts(query: StructuredQuery, nearest_titles: Sequence[str]) -> dict[str, Any]:
-    return {"type": "no_match", "shopper_message": query.raw_message, "product_type": query.product_type,
-            "nearest": list(nearest_titles)[:2]}
+def build_no_match_facts(
+    query: StructuredQuery,
+    nearest_titles: Sequence[str],
+    reason: str = "missing_type",
+) -> dict[str, Any]:
+    return {
+        "type": "no_match",
+        "shopper_message": query.raw_message,
+        "product_type": query.product_type,
+        "nearest": list(nearest_titles)[:2],
+        "reason": reason,
+    }
 
 
 # ------------------------------------------------------------------ template renderer
@@ -267,14 +276,37 @@ def render(facts: dict[str, Any]) -> str:
         return f"Happy to help! What kind of product are you looking for? For example {opts}."
 
     if t == "no_match":
-        what = f"a {facts['product_type']}" if facts.get("product_type") else None
-        first = f"I don't have {what} in the catalog." if what else "I couldn't find anything that matches that."
+        what = (
+               f"a {facts['product_type']}"
+               if facts.get("product_type")
+               else "a product"
+        )
+
+        if facts.get("reason") == "constraints":
+             return (
+                f"I couldn't find {what} that meets all your requirements. "
+                "Would you like to adjust your budget or requirements?"
+             )
+
+        first = (
+            f"I don't have {what} in the catalog."
+            if facts.get("product_type")
+            else "I couldn't find anything that matches that."
+        )
+
         near = facts.get("nearest") or []
         if near:
             names = " and ".join(f"the {n}" for n in near)
-            return (f"{first} The closest things I have are {names}, but they're not really the same thing. "
-                    "Would you like me to look at something else?")
-        return f"{first} Tell me a bit more about what you need and I'll look for the closest fit."
+            return (
+                f"{first} The closest things I have are {names}, "
+                "but they're not really the same thing. "
+                "Would you like me to look at something else?"
+            )
+
+        return (
+            f"{first} Tell me a bit more about what you need "
+            "and I'll look for the closest fit."
+        )
 
     p = facts["primary"]
     parts: list[str] = []
@@ -480,11 +512,14 @@ _BRIEFS = {
     "clarification": (
         "Ask ONE short, friendly clarifying question (exactly one question mark) and offer these options "
         "(use their exact wording). Do not mention any product, price or recommendation."),
-    "no_match": (
-        "Say honestly and kindly that the catalog has no such product (use product_type if given). You may "
-        "mention the nearest titles as loosely related, but not as recommendations. No prices. "
-        "End with at most one question."),
-}
+         "no_match": (
+        "Explain honestly that no product satisfies the request. If reason is "
+        "'constraints', explain that none meet all requirements and do not claim "
+        "the product type is absent. If reason is 'missing_type', say the catalog "
+        "has no such product. Nearest titles may be mentioned as loosely related, "
+        "not recommendations. No prices. End with at most one question."),
+       }
+
 
 
 def llm_view(facts: dict[str, Any]) -> dict[str, Any]:
