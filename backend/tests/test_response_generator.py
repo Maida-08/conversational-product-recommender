@@ -45,6 +45,12 @@ def facts_for(products):
         if match_check(q, retrieval).decision == "no_match":
             return build_no_match_facts(q, [c.product.title for c in retrieval.candidates[:2]])
         rec, up = plan_recommendation(q, ranker.rank(q, retrieval.candidates))
+        if rec is None:
+            return build_no_match_facts(
+                q,
+                [c.product.title for c in retrieval.candidates[:2]],
+                reason="constraints",
+            )
         return build_recommendation_facts(q, rec, up)
     return _go
 

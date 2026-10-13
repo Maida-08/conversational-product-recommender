@@ -236,3 +236,25 @@ def test_plan_recommendation_handles_an_empty_ranking():
 def test_the_primary_is_unchanged_by_the_upsell_step(run):
     q, rec, dec, ranked = run(CHEAP_EARBUDS)
     assert pid(rec.primary) == pid(recommend(ranked).primary)
+def test_standard_budget_excludes_over_budget_primary_and_upsell(run):
+    _, rec, dec, _ = run("I need wireless earbuds under $30")
+
+    assert rec is not None
+    assert rec.primary.product.price_usd < 30
+    assert all(item.product.price_usd < 30 for item in rec.secondary)
+    assert dec.suggestion is None or dec.suggestion.product.product.price_usd < 30
+
+
+
+def test_standard_budget_excludes_product_priced_exactly_at_max(products):
+    catalog = edited(products, "P014", price_usd=30.0)
+    run = make_runner(catalog)
+
+    _, rec, _, ranked = run("I need wireless earbuds under $30")
+
+    # P014 is the exact-budget boundary case and must not be recommended.
+    assert any(item.product.product_id == "P014" for item in ranked)
+    assert rec is None or (
+        rec.primary.product.product_id != "P014"
+        and all(item.product.product_id != "P014" for item in rec.secondary)
+    )

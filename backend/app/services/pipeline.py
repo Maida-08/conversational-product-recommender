@@ -177,7 +177,7 @@ class Engine:
 
         Budget filtering is deliberately applied after ranking.
         """
-        if q.budget.firmness != "firm" or q.budget.max is None:
+        if q.budget.firmness not in ("standard", "firm") or q.budget.max is None:
             return ranked
 
         message_lower = q.raw_message.lower()

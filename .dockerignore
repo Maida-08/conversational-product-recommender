@@ -1,0 +1,17 @@
+
+.git
+.github
+.venv
+venv
+**/.venv
+**/venv
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/node_modules
+frontend/dist
+backend/.env
+**/.env
+*.bak
+outputs
+notebooks

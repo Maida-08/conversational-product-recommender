@@ -227,26 +227,39 @@ def plan_recommendation(
     budget = query.budget
 
     # A firm maximum is a hard constraint, not just a ranking preference.
-    if budget.firmness == "firm" and budget.max is not None:
-        candidates = [
-            item for item in ranked
-            if item.product.price_usd <= budget.max
-        ]
+    if budget.firmness in ("standard", "firm") and budget.max is not None:
+        if budget.firmness == "standard":
+            candidates = [
+                item for item in ranked
+                if item.product.price_usd < budget.max
+            ]
+        else:
+            candidates = [
+                item for item in ranked
+                if item.product.price_usd <= budget.max
+            ]
 
         if not candidates:
             return None, UpsellDecision(
                 skipped_reason="no products within the firm budget"
             )
-
     rec = recommend(candidates)
-
     if rec is None:
         return None, UpsellDecision(
             skipped_reason="nothing suitable to recommend"
         )
 
     decision = suggest_upsell(query, rec, candidates)
-
+    if len(candidates) < len(ranked):
+        full_decision = suggest_upsell(query, rec, ranked)
+        candidate_ids = {
+            item.product.product_id for item in candidates
+        }
+        decision.rejected.update({
+            product_id: reason
+            for product_id, reason in full_decision.rejected.items()
+            if product_id not in candidate_ids
+        })
     if decision.suggestion:
         rec = recommend(
             candidates,
