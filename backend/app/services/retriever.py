@@ -123,7 +123,25 @@ def type_relevance(q: StructuredQuery, p: ProcessedProduct) -> tuple[float, str]
             pt |= {"running", "shoe"}
         if {"backpacking", "pack"} <= pt:       # "55L Backpacking Pack" IS a backpack (a tent is not)
             pt.add("backpack")
-        if qt and qt <= pt:
+        # Match product identity using the type's head noun; descriptive modifiers
+        # (e.g. wireless, waterproof, model names) must not downgrade the match.
+        p_type_tokens = _tokens(p.attributes.product_type or "")
+        query_tokens = _tokens(q.product_type)
+        query_head = query_tokens[-1] if query_tokens else None
+
+# Ignore numeric dimensions such as 6mm, 8mm, 40L, or 1TB.
+        p_type_tokens = [
+        token for token in p_type_tokens
+             if not re.fullmatch(r"\d+(?:mm|cm|in|inch|inches|ft|gb|tb|l)", token)
+]
+        product_head = p_type_tokens[-1] if p_type_tokens else None
+        # Treat common model suffixes as variants, not as the product type.
+        model_suffixes = {"lite", "pro", "plus", "max", "mini", "se"}
+        if product_head in model_suffixes and len(p_type_tokens) > 1:
+            product_head = p_type_tokens[-2]
+        if qt and qt <= pt and query_head == product_head:
+            return 1.0, "same product type"
+        if qt and qt <= pt and query_head == "shoe" and pt & {"runner", "trainer"}:
             return 1.0, "same product type"
         if qt == {"shoe"} and pt & _FOOTWEAR:
             return 0.9, "footwear (generic 'shoe' request)"

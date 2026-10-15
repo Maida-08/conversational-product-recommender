@@ -236,6 +236,7 @@ _PRODUCT_TYPES: list[tuple[str, str, str]] = [
     # one-offs
     ("dog bed", "pets", r"dog\s+bed|pet\s+bed"),
     ("laptop stand", "office", r"laptop\s+stands?"),
+    ("laptop", "electronics", r"\blaptops?\b"),
 ]
 _PRODUCT_TYPES_C = [(pt, cat, re.compile(p, re.I)) for pt, cat, p in _PRODUCT_TYPES]
 
